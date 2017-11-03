@@ -1,0 +1,20 @@
+/vendor
+/storage
+!/storage/tmp/*
+.env
+.idea*
+!.gitkeep
+/public/text/*
+!/public/text/test.md
+/public/upload/*
+!/public/upload/e493a8f01d4e2cb2eee7577735493d97-1505742284.png
+/public/img/uploads/*
+/public/build/**/* binary
+/public/vendor/**/* binary
+/public/js/**/* binary
+/public/css/**/* binary
+* text=auto
+*.min.js binary
+*.min.css binary
+*.css linguist-vendored
+*.scss linguist-vendored
