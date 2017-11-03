@@ -1,0 +1,126 @@
+// ***************************************
+// Typography
+// ***************************************
+
+
+// Headings
+// --------
+h1, h2, h3, h4, h5, h6 {
+	font-family: $font-family-accent;
+  line-height: $headings-line-height;
+  color: $headings-color;
+  margin: 0;
+  font-weight: $headings-font-weight;
+}
+
+h1 {
+  font-size: $font-size-h1;
+  line-height: 1.16;
+  margin-bottom: $grid-vertical-step/2;
+}
+h2 {
+  font-size: $font-size-h2;
+  line-height: 1.33;
+  margin-bottom: $grid-vertical-step/2;
+}
+h3 {
+  font-size: $font-size-h3;
+  line-height: 1.5;
+  margin-bottom: $grid-vertical-step/4;
+}
+h4 {
+  font-size: $font-size-h4;
+  line-height: 1.5;
+  margin-bottom: $grid-vertical-step/4;
+}
+h5 {
+  font-size: $font-size-h5;
+  line-height: 1.5;
+  margin-bottom: $grid-vertical-step/4;
+}
+h6 {
+  font-size: $font-size-h6;
+  line-height: 1.5;
+  margin-bottom: $grid-vertical-step/4;
+}
+
+// Paragraphs
+// ----------
+p {
+	margin-bottom: $grid-vertical-step;
+	line-height: $line-height-base;
+}
+.text-lead { font-size: $font-size-lead; }
+.text-lg { font-size: $font-size-large; }
+.text-sm { font-size: $font-size-small; }
+.text-xs { font-size: $font-size-xs; }
+
+// Lists
+// -----
+ul, ol {
+	color: $gray-darker;
+	padding-left: 14px;
+	ul, ol { margin-bottom: 0; }
+  li { margin-bottom: 4px; }
+}
+ul.list-featured {
+	list-style: none;
+  padding-left: 0;
+	li {
+		&::before {
+			font-family:'Material Icons';
+			content: "\e15b";
+			vertical-align: middle;
+			margin-right: 4px;
+		}
+	}
+}
+
+// Alignment
+// ---------
+.text-left           { text-align: left; }
+.text-right          { text-align: right; }
+.text-center         { text-align: center; }
+.text-justify        { text-align: justify; }
+.text-nowrap         { white-space: nowrap; }
+
+// Transformation
+// --------------
+.text-lowercase      { text-transform: lowercase; }
+.text-uppercase      { text-transform: uppercase; }
+.text-capitalize     { text-transform: capitalize; }
+.text-notransform     { text-transform: none; }
+
+// Font Weight
+// -----------
+.text-semibold { font-weight: 600; }
+.text-bold { font-weight: bold; }
+.text-normal { font-weight: normal; }
+.text-thin { font-weight: 300; }
+
+// Font Style
+// ----------
+.text-italic { font-style: italic; }
+.text-normal { font-style: normal; }
+
+// Contextual colors
+// -----------------
+.text-default { color: $brand-default !important; }
+.text-primary{ color: $brand-primary; }
+.text-success{ color: $brand-success; }
+.text-info{ color: $brand-info; }
+.text-warning{ color: $brand-warning; }
+.text-danger{ color: $brand-danger; }
+.text-light{
+	color: #fff;
+	* {
+		color: #fff;
+	}
+}
+
+// Icons Default
+// -------------
+.material-icons {
+  position: relative;
+  top: -1px;
+}

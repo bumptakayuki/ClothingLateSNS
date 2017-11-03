@@ -1,0 +1,38 @@
+// ***************************************
+// Top Bar
+// ***************************************
+
+// Top Bar Styles
+// --------------
+.top-bar {
+	background-color: $top-bar-bg-color;
+	padding: 9px 0 10px;
+	.social {
+		color: $top-bar-social-color;
+		padding: 0 5px;
+		&:hover {
+			color: $top-bar-social-color-hover;
+		}
+		&::before {
+			position: relative;
+			top: 2px;
+		}
+	}
+	.tools {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		> * {
+			display: inline-block;
+			margin: 0;
+			> a {
+				color: #fff;
+				padding-left: 12px;
+				text-decoration: none;
+				&:hover {
+					color: $brand-primary;
+				}
+			}
+		}
+	}
+}

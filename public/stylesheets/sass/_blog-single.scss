@@ -1,0 +1,31 @@
+// ***************************************
+// Blog Single
+// ***************************************
+
+
+// Base Class
+// ----------
+.single-image {
+  .meta-left {
+    > * {
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+  .blog-single-meta {
+    padding: 23px 0 10px;
+    border-bottom: 1px solid $gray-light;
+    font-size: $font-size-small;
+    > * {
+      display: inline-block;
+    }
+    i {
+      font-size: 6px;
+    }
+    .likes-qty {
+      i {
+        font-size: $font-size-small;
+      }
+    }
+  }
+}

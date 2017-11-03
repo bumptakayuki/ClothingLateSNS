@@ -1,0 +1,64 @@
+// ***************************************
+// Block Title
+// ***************************************
+
+
+// Basic Styles Center Aligned
+// ------------
+.block-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  small {
+    display: block;
+    position: absolute;
+    top: -13px;
+    font-size: $font-size-small;
+    @include center(x);
+  }
+  &::after,
+  &::before {
+    background-color: $block-title-line-color;
+    flex-grow: 1;
+    height: 1px;
+    content: '\a0';
+    background-color: #ddd;
+    display: flex;
+    margin-top: 5px;
+  }
+  &::after {
+    margin-left: 30px;
+  }
+  &::before {
+    margin-right: 30px;
+  }
+
+  // Left Aligned
+  // ------------
+  &.text-left {
+    text-align: left;
+    small {
+      left: 0;
+      right: auto;
+      @include transform(translate(0));
+    }
+    &::before {
+      display: none;
+    }
+  }
+
+  // Right Aligned
+  // -------------
+  &.text-right {
+    small {
+      left: auto;;
+      right: 0;
+      @include transform(translate(0));
+    }
+    &::after {
+      display: none;
+    }
+  }
+}

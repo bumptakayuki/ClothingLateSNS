@@ -1,0 +1,179 @@
+// ***************************************
+// Variables
+// ***************************************
+
+
+// Gray and brand colors for use across Theme
+// ------------------------------------------
+$gray-darker:             #000;
+$gray-dark:             	lighten($gray-darker, 30%);
+$gray:                    lighten($gray-darker, 50%);
+$gray-light:              lighten($gray-darker, 90%);
+$gray-lighter:            lighten($gray-darker, 96%);
+
+$brand-default:           #000;
+$brand-primary:           #ee4da4;
+$brand-info:		          #6a9fff;
+$brand-success:           #2ece5f;
+$brand-warning:           #c8ce2e;
+$brand-danger:            #ce5f2e;
+
+$body-bg: 						  	#ffffff;
+
+
+// Global Values
+// -------------
+$grid-vertical-step:      24px;
+$border-radius-default:   4px;
+$line-height-base:        1.5;
+
+$link-color: 							$gray-darker;
+$link-color-hover: 				$brand-primary;
+
+
+// Typography
+// ----------
+$font-family-base: 			  'Hind', sans-serif;
+$font-family-accent: 		  'Playfair Display', serif;
+$text-color: 						  $gray;
+
+$font-size-base:          14px;
+$font-size-lead:          floor(($font-size-base * 1.77));
+$font-size-large: 				floor(($font-size-base * 1.148));
+$font-size-small: 				floor(($font-size-base * 0.88));
+$font-size-xs:         		floor(($font-size-base * 0.77));
+
+$font-size-h1:            floor(($font-size-base * 3));
+$font-size-h2:            floor(($font-size-base * 2.57));
+$font-size-h3:            floor(($font-size-base * 2.14));
+$font-size-h4:            $font-size-lead;
+$font-size-h5:            floor(($font-size-base * 1.28));
+$font-size-h6:            $font-size-base;
+
+$headings-color:	 				$gray-dark;
+$headings-font-weight: 		400;
+
+$headings-line-height: 		1.2;
+
+
+// Tables
+// ------
+$table-border-width: 					1px;
+$table-border-color: 					$gray-light;
+$table-border-radius: 				$border-radius-default;
+$table-cell-padding:					14px 15px;
+$table-bg-accent: 						$gray-lighter;
+
+
+// Top Bar
+// -------
+$top-bar-bg-color: 							$gray-darker;
+
+$top-bar-social-color: 				#fff;
+$top-bar-social-color-hover:  $brand-primary;
+
+// Dropdown
+// --------
+$dropdown-color:							#fff;
+$dropdown-hover-color: 				$brand-primary;
+$submenu-hover-color: 				$brand-primary;
+$submenu-right-padding:				$grid-vertical-step + 17px;
+$dropdown-zindex: 						100;
+
+// Header Tools
+// ------------
+$header-cart-dropdown-width: 	318px;
+
+// Main Navigation
+// ---------------
+$main-menu-lvl-1-color: 			$gray-darker;
+$main-menu-lvl-1-hover-color: $brand-primary;
+$sub-menu-lvl-1-width: 				270px;
+
+$main-menu-lvl-2-color: 			$gray-darker;
+$main-menu-lvl-2-hover-color: $brand-primary;
+
+// Main Logo
+// ---------
+$main-logo-width: 						54px;
+
+//== Market Buttons
+// ----------------
+
+// Global
+$market-btn-height:       60px;
+$market-btn-font-size-lg: floor(($font-size-base * 1.29)); // ~18px
+$market-btn-font-size-sm: $font-size-base; // ~14px
+
+// Amazon
+$amazon-btn-width:        185px;
+$amazon-btn-bg:           #f5f5f5;
+$amazon-btn-color:        #000000;
+
+// App Store
+$appstore-btn-width:      200px;
+$appstore-btn-bg:         #000000;
+$appstore-btn-color:      #ffffff;
+
+// Google Play
+$playstore-btn-width:     202px;
+$playstore-btn-bg:        #f5f5f5;
+$playstore-btn-color:     #000000;
+
+// Windows
+$windows-btn-width:       215px;
+$windows-btn-bg:          #00adef;
+$windows-btn-color:       #ffffff;
+
+// Blackberry
+$blackberry-btn-width:    218px;
+$blackberry-btn-bg:       #000000;
+$blackberry-btn-color:    #ffffff;
+
+// Paypal
+$paypal-btn-width:    180px;
+$paypal-btn-bg:       $gray-light;
+
+// Range Slider
+// ------------
+$range-slider-width: 			250px;
+
+// Block Title
+// -----------
+$block-title-line-color:  $gray-light;
+
+// Panel(acorderon)
+// ----------------
+$panel-bg:                $gray-lighter;
+
+// Comments
+// --------
+$comment-author-ava-size: 100px;
+
+//== Modals
+//
+
+$zindex-modal: 								1800;
+$zindex-modal-background: 		1700;
+$modal-width: 								1100px;
+$modal-content-bg: 						#fff;
+$modal-backdrop-bg: 					$brand-default;
+$modal-backdrop-opacity:			.9;
+
+
+//== Social Buttons
+//
+
+$social-btn-size: 						36px;
+$social-bar-zindex: 					$zindex-modal - 50;
+
+
+// Media queries (responsive breackpoints)
+// Desktop, Tablet, Mobile
+// ---------------------------------------
+$desktop:   		   'screen and (max-width: 1200px)';
+$tablet-land:      'screen and (max-width: 991px)';
+$tablet-port:    	 'screen and (max-width: 768px)';
+$mobile-land:		 	 'screen and (max-width: 480px)';
+$mobile-port:		 	 'screen and (max-width: 360px)';
+$nav-collapse: 		 $tablet-land;

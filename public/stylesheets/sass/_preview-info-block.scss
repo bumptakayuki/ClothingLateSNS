@@ -1,0 +1,109 @@
+// ***************************************
+// Preview Info Block
+// ***************************************
+
+
+// Basic Class
+// -----------
+.preview-info-block-container {
+  border: 1px solid $brand-primary;
+  padding: 36px;
+  position: relative;
+  .carousel-item {
+    outline: none !important;
+  }
+  .arrows {
+    position: absolute;
+    width: 50%;
+    top: 36px;
+    left: 50%;
+    z-index: 10;
+    padding: 0 30px;
+    @media #{$tablet-land} {
+      display: none;
+    }
+    .slick-arrow {
+      background-color: $brand-default;
+      width: 24px;
+      height: 24px;
+      color: #fff;
+      text-align: center;
+      line-height: 24px;
+      cursor: pointer;
+      &::after {
+        font-family: "hind";
+        position: absolute;
+        right: -93px;
+        color: $text-color;
+        font-size: 14px;
+        line-height: 28px;
+      }
+    }
+    .slick-prev {
+      &::after {
+        content: "Previous Deal";
+      }
+    }
+    .slick-next {
+      float: right;
+      &::after {content: "Next Deal";
+      right: 40px;}
+    }
+  }
+}
+.preview-info-block {
+  display: flex;
+  align-content: stretch;
+  > * { width: 100%; }
+  @media #{$tablet-land} {
+    display: block;
+  }
+}
+.info-block-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-left: 30px;
+  .item-logo {
+    text-align: center;
+    img { display: inline-block; }
+  }
+  .single-item-info {
+    width: 100%;
+  }
+  @media #{$tablet-land} {
+    padding-left: 0;
+    padding-top: 30px;
+  }
+}
+
+.countdown {
+  text-align: center;
+  margin-top: 40px;
+  > span {
+    display: block;
+  }
+  > div {
+    display: inline-block;
+    font-size: 12px;
+    width: 72px;
+    height: 72px;
+    text-align: center;
+    background-color: $gray-light;
+    margin: 0 3px;
+    color: $gray-darker;
+    padding-top: 10px;
+    > span {
+      display: block;
+      font-size: 24px;
+    }
+  }
+  @media #{$mobile-land} {
+    > div {
+      background-color: transparent;
+      width: auto;
+      height: auto;
+    }
+  }
+}

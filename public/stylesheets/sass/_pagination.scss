@@ -1,0 +1,45 @@
+// ***************************************
+// Pagination
+// ***************************************
+
+
+// Base Class
+// ----------------
+.pagination {
+   list-style: none;
+   padding: 0;
+   margin-bottom: $grid-vertical-step*2;
+   li {
+     display: inline-block;
+     vertical-align: middle;
+     &.arrow {
+       display: inline-block;
+       a {
+         background-color: $gray-lighter;
+         padding: 15px 17.5px 12px 17.5px;
+         color: $gray-darker;
+         &:hover {
+           color: #fff;
+           background: $brand-default;
+         }
+       }
+     }
+     a {
+       color: $text-color;
+       padding: 0 3px;
+     }
+     &.active {
+       a {
+         color: $gray-darker;
+       }
+     }
+     &.select-cont {
+       margin-right: 10px;
+       @media #{$mobile-land} {
+         width: 100%;
+         display: block;
+         margin-bottom: 25px;
+       }
+     }
+   }
+}

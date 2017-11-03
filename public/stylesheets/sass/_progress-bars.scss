@@ -1,0 +1,36 @@
+//
+// Progress bars
+// --------------------------------------------------
+
+// Bar itself
+// -------------------------
+
+// Outer container
+.progress {
+  height: 6px;
+  background-color: $gray-light;
+  width: 100%;
+  position: relative;
+  margin-top: 30px;
+  .about {
+    text-align: left;
+    position: absolute;
+    top: -24px;
+    width: 100%;
+    color: $brand-default;
+  }
+  .qty {
+    display: inline-block;
+    float: right;
+  }
+}
+
+// Bar of progress
+.progress-bar {
+  float: left;
+  width: 0%;
+  height: 100%;
+  color: #000;
+  text-align: center;
+  background-color: #000;
+}

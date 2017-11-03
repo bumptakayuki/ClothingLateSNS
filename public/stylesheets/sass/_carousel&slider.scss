@@ -1,0 +1,185 @@
+// ***************************************
+// Carousels & Sliders
+// ***************************************
+
+
+// Base Class
+// ----------
+.image-carousel, .items-carousel {
+  // Arrow Nav Carousel
+  // ------------------
+  .slick-arrow {
+    position: absolute;
+    display: block;
+    width: 48px;
+    height: 48px;
+    top: 50%;
+    margin-top: -24px;
+    left: 12px;
+    background-color: #fff;
+    text-align: center;
+    z-index: 5;
+    @include transition(.25s);
+    cursor: pointer;
+    font-size: $font-size-base;
+    &.slick-next {
+      left: auto;
+      right: 12px;
+    }
+    &::before {
+      position: relative;
+      display: block;
+      top: 17px;
+    }
+    &:hover {
+      color: #fff;
+      background-color: $gray-darker;
+    }
+  }
+}
+.image-carousel-caption {
+  font-size: $font-size-small;
+  margin-top: 12px;
+}
+
+// Category Carousel Nav Fix
+// -------------------------
+.items-carousel {
+  // Arrow Nav Carousel
+  // ------------------
+  .slick-arrow {
+    margin-top: -40px;
+  }
+}
+
+// Single Item Page Carousel-Slider
+// --------------------------------
+.single-slider {
+  .image-preview1 {
+    max-width: 100%;
+    max-width: 535px;
+    float: left;
+    .slick-dots {
+      position: absolute;
+      bottom: 10px;
+      width: 100%;
+      text-align: center;
+      @include backface-visibility(visible);
+      > * {
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        background-color: #fff;
+        cursor: pointer;
+        > * {
+          border: none;
+          background-color: $gray-light;
+          width: 6px;
+          height: 6px;
+          border-radius: 50%;
+          padding: 0;
+          text-indent: -999999px;
+          vertical-align: middle;
+          position: relative;
+          top: 2px;
+        }
+        &.slick-active {
+          > * {
+            background-color: $gray-darker;
+          }
+        }
+      }
+    }
+    @media #{$desktop} {
+      float: none;
+    }
+    @media #{$tablet-land} {
+      width: auto;
+    }
+    @media #{$tablet-port} {
+      width: auto;
+      margin: 0 auto 40px;
+    }
+  }
+}
+.thumbnail-carousel {
+  float: left;
+  width: 100%;
+  &.slick-vertical {
+    max-width: 100px;
+    overflow: hidden;
+    max-height: 675px;
+    .slick-arrow {
+      position: absolute;
+      top: 12px;
+      width: 48px;
+      height: 48px;
+      display: block;
+      z-index: 1;
+      border: none;
+      font-size: 0;
+      margin: 0;
+      background: #fff;
+      @include center(x);
+
+      &:before {
+        font-family: 'material icons';
+        content: "\e316";
+        font-size: 24px;
+        position: absolute;
+        display: inline-block;
+        color: $gray-darker;
+        @include center(xy);
+      }
+    }
+    .slick-next {
+      top: auto;
+      bottom: 12px;
+      &:before {
+        padding-right: 0;
+        content: "\e313";
+      }
+    }
+  }
+  @media #{$desktop} {
+    display: none;
+  }
+}
+.thumbnail-carousel {
+  margin-right: 10px;
+  .slick-slide {
+    display: block;
+    border: none;
+    margin: 0 0 11px 0;
+  }
+}
+.thumbnail-carousel a:focus { outline: none; }
+.thumbnail-carousel a > img {
+  height: auto;
+  transition: opacity .25s;
+}
+.thumbnail-carousel a {
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $gray-darker;
+    opacity: 0;
+    @include transition(.25s);
+  }
+  &.slick-current {
+    &::after {
+      opacity: .2;
+    }
+  }
+}
+
+.slick-track {
+  > * {
+    outline: none !important;
+  }
+}

@@ -1,0 +1,492 @@
+// ***************************************
+// Tiles
+// ***************************************
+
+
+// Basic Class
+// -----------
+.tile {
+  margin: 0 auto;
+  margin-bottom: 36px;
+
+  .preview-box {
+    position: relative;
+
+    // Tile Meta Buttons
+    // -----------------
+    .preview-meta {
+      display: block;
+      position: absolute;
+      text-align: center;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      justify-content: center;
+      opacity: 0;
+      @include transition(.35s);
+      @include transform (translateY(-10px));
+      > * {
+        margin-left: 7.5px;
+        margin-right: 7.5px;
+        display: inline-block;
+        * {
+          display: block;
+        }
+      }
+      a {
+        margin: 0;
+      }
+    }
+
+    // Bages Alignment
+    // ---------------
+    .bage {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+    }
+
+    // ------------
+    // Tile Overlay
+    &:after {
+      position: absolute;
+      content: "";
+      display: block;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      background-color: #000;
+      opacity: 0;
+      @include transition(.45s);
+      z-index: 1;
+    }
+    &:hover {
+      // Tile Meta Buttons Animation
+      // ---------------------------
+      .preview-meta {
+        z-index: 5;
+        opacity: 1;
+        @include transform (translateY(0));
+      }
+
+      // Tile Overlay On Hover
+      // ---------------------
+      &:after {
+        opacity: .06;
+      }
+    }
+  }
+
+  // Tile Title & Link
+  // -----------------
+  .tile-title {
+    margin-top: 15px;
+    padding-bottom: 13px;
+    position: relative;
+    a {
+      text-transform: uppercase;
+      letter-spacing: .05em;
+    }
+    &:after {
+      position: absolute;
+      left: 0;
+      bottom: 5px;
+      content: "";
+      width: 20%;
+      height: 1px;
+      background-color: $gray-light;
+    }
+  }
+
+  // Tile - Category, Rating etc
+  // ---------------------------
+  .tile-meta {
+    .meta-top {
+      .category {
+        font-size: $font-size-xs;
+      }
+      .cost {
+        float: right;
+      }
+    }
+    .meta-bottom {
+      img {
+        width: auto;
+      }
+    }
+  }
+}
+
+// If touch enabled
+// ----------------
+.touch {
+  .tile {
+    .preview-box {
+      overflow: hidden;
+      // Tile Meta Buttons Animation
+      // ---------------------------
+      .preview-meta {
+        z-index: 5;
+        @include transform(translateY(0));
+        > * {
+          opacity: 1;
+          &:nth-child(1) {
+            @include transition(.25s ease-in-out .08s);
+          }
+
+          &:nth-child(2) {
+            @include transition(.25s ease-in-out .16s);
+          }
+
+          &:nth-child(3) {
+            @include transition(.25s ease-in-out .24s);
+          }
+
+          &:nth-child(4) {
+            @include transition(.25s ease-in-out .32s);
+          }
+        }
+      }
+    }
+  }
+}
+
+// Tile Carousel
+// -------------
+.preview-carousel {
+  position: relative;
+  * {
+    user-select: none;
+    outline: none !important;
+  }
+
+  // Color Select Dots
+  // -----------------
+  .slick-dots {
+    position: absolute;
+    top: 0;
+    margin: 0;
+    padding: 13px;
+    list-style: none;
+    z-index: 5;
+    li {
+      display: inline-block;
+      background-color: #fff;
+      padding: 6px 3px 6px 3px;
+      &:first-child {
+        padding-left: 6px;
+      }
+      &:last-child {
+        padding-right: 6px;
+      }
+      a {
+        display: block;
+        width: 12px;
+        height: 12px;
+        cursor: pointer;
+        opacity: .5;
+        &:hover {
+          opacity: 1;
+        }
+      }
+      &.slick-active {
+        a {
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  // Arrow Nav Carousel
+  // ------------------
+  .slick-arrow {
+    position: absolute;
+    display: block;
+    width: 24px;
+    height: 24px;
+    top: 12px;
+    left: 12px;
+    background-color: #fff;
+    text-align: center;
+    z-index: 5;
+    @include transition(.25s);
+    cursor: pointer;
+    &.slick-next {
+      left: 36px;
+    }
+    &::before {
+      position: relative;
+      display: block;
+      top: 5px;
+    }
+    &:hover {
+      color: #fff;
+      background-color: $gray-darker;
+    }
+  }
+}
+
+// Tile Horizontal
+// ---------------
+.tile-horizontal {
+  max-width: none;
+  display: flex;
+  background-color: $gray-lighter;
+  padding-right: 30px;
+  @media #{$tablet-port} {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+    .tile-title {
+      &::after {
+        @include center(x);
+      }
+    }
+  }
+  @media #{$mobile-port} {
+    padding: 0;
+    .preview-box {
+      margin-right: 0 !important;
+    }
+    .horizontal-meta {
+      padding: 0 10px;
+    }
+  }
+  .preview-box {
+    max-width: 270px;
+    flex-shrink: 0;
+    margin-right: 30px;
+  }
+  .tile-text {
+    margin-bottom: 18px;
+  }
+  .horizontal-meta {
+    flex-shrink: 1;
+    .raring {
+      width: auto;
+      margin-bottom: 10px;
+    }
+    .category {
+      font-size: $font-size-small;
+      margin-bottom: 5px;
+    }
+  }
+  .preview-meta {
+    margin-top: $grid-vertical-step;
+    > * {
+      display: inline-block;
+    }
+  }
+}
+
+// Tile Blog
+// ---------
+.tile-blog {
+  background-color: $gray-lighter;
+  .tile-title {
+    font-family: $font-family-accent;
+    padding: 30px $grid-vertical-step 0;
+    margin-top: 0;
+    a {
+      text-transform: none;
+      font-size: $font-size-lead;
+    }
+    &::after {
+      display: none;
+    }
+  }
+  .tile-meta {
+    padding: 16px $grid-vertical-step $grid-vertical-step;
+    a {
+      color: $text-color;
+      &:hover {
+        color: $link-color-hover;
+      }
+    }
+    .meta-top {
+      font-size: $font-size-xs;
+      position: relative;
+      > * {
+        padding-right: 8px;
+      }
+      &:after {
+        position: absolute;
+        left: 0;
+        bottom: -8px;
+        content: "";
+        width:100%;
+        height: 1px;
+        background-color: $gray-light;
+      }
+    }
+    .meta-bottom {
+      > * {
+        font-size: $font-size-small;
+      }
+      .likes-qty {
+        float: right;
+        i {
+          padding-right: 3px;
+        }
+      }
+    }
+    .tile-text {
+      padding-top: 16px;
+    }
+  }
+}
+
+// Instagram like Tiles
+// --------------------
+.tile-insta {
+  .preview-box {
+    display: block;
+    position: relative;
+    &::after {
+      display: block;
+      content: "";
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      z-index: 1;
+      opacity: 0;
+      background-color: $gray-darker;
+      @include transition(.25s);
+    }
+    .insta-meta {
+      position: absolute;
+      @include center(xy);
+      color: #fff;
+      opacity: 0;
+      visibility: hidden;
+      @include transition(.25s);
+      z-index: 2;
+    }
+    &:hover {
+      &::after {
+        opacity: .5;
+      }
+      .insta-meta {
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+  }
+}
+
+
+// Categoty Tile
+// -------------
+.tile-category {
+  .preview-box {
+    display: block;
+    &::after {
+      background-color: $brand-primary;
+    }
+    &::before {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      font-family: "material icons";
+      content: "\e5c8";
+      color: #fff;
+      opacity: 0;
+      @include transition(.25s);
+      z-index: 2;
+      font-size: 24px;
+    }
+    &:hover {
+      &::after {
+        opacity: .6;
+      }
+      &::before {
+        opacity: 1;
+      }
+    }
+  }
+  .tile-title {
+    text-align: center;
+    color: $gray-darker;
+    &::after {
+      @include center(x);
+      width: 10%;
+    }
+  }
+}
+
+// Fix for Isotope Grid Tiles
+// --------------------------
+.grid-item {
+  .tile {
+    margin-bottom: 0;
+    *, .meta-top::after {
+        @include backface-visibility(hidden);
+    }
+  }
+}
+
+// Banner Tiles
+// ------------
+.tile-banner {
+  .preview-box {
+    display: block;
+    position: relative;
+  }
+  .banner-meta {
+    position: absolute;
+    display: block;
+    width: 80%;
+    height: auto;
+    bottom: $grid-vertical-step;
+    background-color: rgba(0, 0, 0, .75);
+    @include center(x);
+    padding: 50px 0;
+  }
+  .title {
+    position: relative;
+    font-weight: 400;
+    &::after {
+      position: absolute;
+      bottom: -4px;
+      display: block;
+      width: 10%;
+      height: 1px;
+      background-color: #fff;
+      content: "";
+      @include center(x);
+    }
+  }
+}
+
+// Gallery Tile
+// ------------
+.zoom-gallery {
+  .tile {
+    .preview-box {
+      z-index: 5;
+    }
+    .hover-icon {
+      position: absolute;
+      @include center(xy);
+      opacity: 0;
+      visibility: hidden;
+      z-index: 10;
+      background-color: #fff;
+      &:hover {
+        background-color: $gray-darker;
+        color: #fff;
+      }
+    }
+    &:hover {
+      .hover-icon {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+}
+.raty {width: auto;}

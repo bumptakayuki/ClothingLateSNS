@@ -1,0 +1,160 @@
+// ***************************************
+// Buttons
+// ***************************************
+
+
+// Base Class
+// ----------
+.btn {
+	color: $gray-darker;
+	text-align: center;
+	vertical-align: middle;
+	border: 1px solid;
+	@include btn-variant($brand-default, .15);
+	padding: 12.5px 23px;
+	display: inline-block;
+	margin: 0 10px 20px 0;
+	transition: .25s;
+	box-shadow: 2.6px 3.1px 0 rgba(0, 0, 0, 0.05);
+	background-color: #fff;
+	&:hover, &:active, &:focus {
+		text-decoration: none;
+		color: $gray-darker;
+		@include btn-variant($brand-default, 1);
+	}
+	&.btn-primary {
+		@include btn-variant($brand-primary, .15);
+		&:hover {
+			@include btn-variant($brand-primary, 1);
+		}
+	}
+	&.btn-info {
+		@include btn-variant($brand-info, .15);
+		&:hover {
+			@include btn-variant($brand-info, 1);
+		}
+	}
+	&.btn-success {
+		@include btn-variant($brand-success, .15);
+		&:hover {
+			@include btn-variant($brand-success, 1);
+		}
+	}
+	&.btn-warning {
+		@include btn-variant($brand-warning, .15);
+		&:hover {
+			@include btn-variant($brand-warning, 1);
+		}
+	}
+	&.btn-danger {
+		@include btn-variant($brand-danger, .15);
+		&:hover {
+			@include btn-variant($brand-danger, 1);
+		}
+	}
+
+	// Button Gray, for Icons
+	// ----------------------
+	&.btn-gray {
+		background-color: $gray-light;
+		border: none;
+		box-shadow: none;
+		padding: 13.5px 23px;
+		&:hover {
+			color: #fff;
+			background-color: $gray-darker;
+		}
+	}
+
+	&.right-icon {
+		padding-right: 18px;
+		i {
+			display: inline-block;
+			margin-left: 10px;
+			font-size: $font-size-large;
+			&[class^="socicon-"] {
+				font-size: 13px;
+				position: relative;
+				top: 2px;
+			}
+		}
+	}
+	&.left-icon {
+		padding-left: 18px;
+		i {
+			display: inline-block;
+			margin-right: 10px;
+			font-size: $font-size-large;
+			&[class^="socicon-"] {
+				font-size: 13px;
+				position: relative;
+				top: 2px;
+			}
+		}
+	}
+	&.btn-iconed {
+		position: relative;
+		width: 48px;
+		height: 48px;
+		margin-right: 4px;
+		box-shadow: none;
+		border: none;
+		i {
+			display: block;
+			position: absolute;
+			@include center(xy);
+			font-size: $font-size-large;
+			line-height: 1;
+		}
+		&:hover {
+			background-color: $brand-default;
+			color: #fff;
+		}
+		&.btn-lg {
+			width: 86px;
+			height: 86px;
+			margin-right: $grid-vertical-step;
+			i {
+				font-size: 36px;
+			}
+		}
+	}
+
+	// Button Sizes
+	// ------------
+	&.btn-lg {
+		padding: 16.5px 24px;
+	}
+	&.btn-sm {
+		padding: 6.5px 24px;
+	}
+	&.btn-xs {
+		padding: 0.5px 24px;
+	}
+
+	&.btn-block {
+		display: block;
+	}
+}
+
+.btn-arrow {
+	position: relative;
+	&::after {
+		content: "";
+		display: block;
+		background-image: url(../img/btn-arrow.svg);
+		background-repeat: no-repeat;
+		position: absolute;
+		right: -30px;
+		width: 40px;
+		height: 20px;
+		top: 50%;
+		margin-top: -8px;
+		@include transition(.35s);
+	}
+	&:hover {
+		&::after {
+			@include transform(translateX(10px));
+		}
+	}
+}

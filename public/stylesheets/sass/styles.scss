@@ -1,0 +1,73 @@
+/*******************************************
+ * B-SHOP - Multipurpose E-commerce Template
+ * Copyright 2016 8Guild.com
+ * Theme Styles
+ * Dependencies: Bootstrap, FontAwesome
+
+    ╔══╗╔═══╗╔╗╔╗╔══╗╔╗──╔══╗
+  	║╔╗║║╔══╝║║║║╚╗╔╝║║──║╔╗╚╗
+  	║╚╝║║║╔═╗║║║║─║║─║║──║║╚╗║
+  	║╔╗║║║╚╗║║║║║─║║─║║──║║─║║
+  	║╚╝║║╚═╝║║╚╝║╔╝╚╗║╚═╗║╚═╝║
+  	╚══╝╚═══╝╚══╝╚══╝╚══╝╚═══╝
+*********************************************/
+
+
+// Import Google Fonts ("Playfair Display" & "Hind")
+// -------------------------------------------------
+@import 'https://fonts.googleapis.com/css?family=Hind:300,400,500,600,700|Playfair+Display:400,400i,700,900';
+
+// font-family: 'Playfair Display', serif;
+// font-family: 'Hind', sans-serif;
+
+@import "bourbon/bourbon";
+
+// Core variables and mixins
+// -------------------------
+@import "variables";
+@import "mixins";
+
+
+// Core CSS
+// --------
+@import "scaffolding";
+@import "typography";
+@import "forms";
+@import "tables";
+@import "buttons";
+@import "grids";
+
+
+// Components
+// ----------
+@import "header";
+@import "footer";
+@import "sidebar";
+@import "tiles";
+@import "widgets";
+@import "panels";
+@import "box-with-icon";
+@import "page-title";
+@import "pagination";
+@import "tabs";
+@import "bages";
+@import "social";
+@import "top-bar";
+@import "dropdown";
+@import "navigation";
+@import "market_buttons";
+@import "range-slider";
+@import "block-title";
+@import "isotope-filters";
+@import "blog-single";
+@import "carousel&slider";
+@import "comments";
+@import "shop-elements";
+@import "sliders";
+@import "cart";
+@import "preview-info-block";
+@import "progress-bars";
+@import "split-section";
+@import "modals";
+@import "quick-preview";
+@import "preloader";

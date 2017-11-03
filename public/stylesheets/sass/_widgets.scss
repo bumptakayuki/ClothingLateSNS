@@ -1,0 +1,181 @@
+// ***************************************
+// Widgets Styles
+// ***************************************
+
+// Basic Style
+// -----------
+.widget {
+	position: relative;
+	.widget-title {
+		color: $gray;
+		margin-bottom: ($grid-vertical-step / 2);
+	}
+}
+
+// Search
+// ------
+.search {
+	position: relative;
+	margin-bottom: $grid-vertical-step;
+	.icon {
+		position: absolute;
+		display: block;
+		width: 13px;
+		height: 13px;
+		left: 10px;
+		margin-top: -1px;
+		@include center(y);
+	}
+	.form-control {
+		padding-left: 30px;
+		margin-bottom: 0;
+	}
+}
+
+// Category List
+// -------------
+.cat-list {
+	@include list-unstyled;
+	margin-top: 0;
+	li {
+		border-bottom: 1px solid $gray-light;
+		span {
+			float: right;
+			color: $gray;
+		}
+		a {
+			color: $gray-darker;
+			padding: 0;
+			position: relative;
+			display: inline-block;
+			@include backface-visibility(hidden);
+
+			// Link hover marker
+			&::before {
+				font-family: 'Material Icons';
+				content: "\e15b";
+				position: absolute;
+				color: $link-color-hover;
+				top: -1px;
+				left: -14px;
+				margin-right: 3px;
+				visibility: hidden;
+				opacity: 0;
+				@include transition(.35s);
+			}
+			&:hover {
+				@include transform(translateX(10px));
+				color: $link-color-hover;
+				text-decoration: none;
+				&::before {
+					visibility: visible;
+					opacity: 1;
+				}
+			}
+		}
+	}
+}
+
+// Tags List
+// ---------
+.tags-list-widget {
+	.tags-list {
+		margin-top: 0;
+		> a {
+			background-color: $gray-light;
+			padding: 2px 7px 0px;
+			font-size: $font-size-small;
+			&:focus {
+				text-decoration: none;
+				color: $link-color-hover;
+			}
+		}
+	}
+}
+
+// Service List
+// ------------
+.service-list {
+	ul {
+		list-style: none;
+		padding: 0;
+		margin-top: 0;
+		li {
+			display: inline-block;
+		}
+	}
+}
+
+// Cart Dropdown
+// -------------
+.cart-list {
+	@include list-unstyled;
+	margin-top: 9px;
+	li {
+		overflow: hidden;
+		margin-bottom: $grid-vertical-step;
+	}
+	.cart-thumb {
+		display: inline-block;
+		max-width: 70px;
+		float: left;
+		margin-right: 12px;
+	}
+	.info-cont {
+		float: left;
+		width: 168px;
+		.item-title {
+			text-transform: uppercase;
+			text-decoration: none !important;
+			color: $link-color;
+			letter-spacing: 0.05em;
+			&:hover {
+				color: $link-color-hover;
+			}
+		}
+		.category {
+			font-size: $font-size-small;
+			color: $gray;
+			&::before {
+				display: block;
+				width: 48px;
+				content: "";
+				border-top: 1px solid $gray-light;
+				margin-top: 3px;
+				margin-bottom: 6px;
+			}
+			.cost {
+				font-size: $font-size-base;
+				float: right;
+				color: $gray-darker;
+			}
+		}
+	}
+	.total {
+		color: $gray;
+		.cost {
+			float: right;
+			color: $gray-darker;
+		}
+	}
+}
+
+// Cart Total
+// ----------
+.cart-total {
+	padding: $grid-vertical-step;
+	.total-title {
+		color: $gray-darker;
+	}
+	.list {
+		margin-top: $grid-vertical-step;
+		.item {
+			padding: 6px 0;
+			display: flex;
+			span:last-child {
+				margin: auto 0 auto auto;
+				color: $gray-darker;
+			}
+		}
+	}
+}

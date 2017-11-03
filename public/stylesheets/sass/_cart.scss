@@ -1,0 +1,141 @@
+// ***************************************
+// Shopping Cart
+// ***************************************
+
+
+// Cart Items
+// ----------
+.items-table {
+  table-layout: fixed;
+  border: none;
+  @media #{$tablet-land} {
+    table-layout: auto;
+    width: 100%;
+    min-width: 720px;
+  }
+  @media #{$mobile-land} {
+    min-width: 600px;
+  }
+  .item-thumb {
+    @media #{$mobile-land} {
+      max-width: 150px;
+    }
+  }
+  .item-info {
+    > * {
+      display: block;
+      margin: 6px 0;
+    }
+  }
+  .remove {
+    float: right;
+    > a {
+      margin: 0;
+    }
+  }
+  th {
+    border: none;
+    padding: 0 $grid-vertical-step 0 0;
+    font-weight: 400;
+    &:first-child {
+      padding-left: 0;
+    }
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+  td {
+    vertical-align: top;
+    padding: $grid-vertical-step $grid-vertical-step $grid-vertical-step 0;
+    @media #{$mobile-land} {
+      padding-right: 10px;
+    }
+    &:first-child {
+      padding-left: 0;
+    }
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+  .rating {
+    padding-bottom: 10px;
+    img {
+      width: auto;
+    }
+  }
+  .item-info {
+    color: $gray-darker;
+  }
+  .category {
+    font-size: $font-size-small;
+    color: $text-color;
+    &:hover {
+      color: $brand-primary;
+    }
+  }
+  .color {
+    span {
+      display: inline-block;
+      width: 12px;
+      height: 12px;
+      margin-left: 5px;
+      position: relative;
+      top: 1px;
+    }
+  }
+  .size {
+    span {
+      display: inline-block;
+      background-color: $gray-light;
+      padding: 0 3px;
+      font-size: $font-size-small;
+    }
+  }
+  .title {
+    position: relative;
+    letter-spacing: 0.05em;
+    &::after {
+      display: block;
+      content: "";
+      position: absolute;
+      width: 20%;
+      height: 1px;
+      left: 0;
+      bottom: -3px;
+      background: $gray-light;
+    }
+  }
+  &.no-border {
+    td {
+      border: none;
+    }
+  }
+}
+
+.cart-bottom-tools {
+  display: flex;
+  flex-wrap: wrap;
+  margin: $grid-vertical-step 0;
+  justify-content: flex-start;
+  align-items: center;
+  > * {
+    margin: 0 0 20px 0;
+    @media #{$tablet-port} {
+      margin: 0 20px 20px 0;
+    }
+  }
+  input {
+    margin-right: 20px;
+  }
+  .update {
+    margin: auto;
+    margin-right: 0;
+    margin-top: 0;
+    @media #{$tablet-port} {
+      margin: 0 20px 20px 0;
+    }
+  }
+}
+.table-responsive {
+  border: none;
+}

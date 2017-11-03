@@ -1,0 +1,30 @@
+// ***************************************
+// Bages
+// ***************************************
+
+
+// Bage Basic
+// -----------
+.bage {
+  display: inline-block;
+  padding: 2px 8px;
+  background-color: $brand-default;
+  color: #fff;
+  font-size: $font-size-small;
+
+  &.bage-primary {
+    background-color: $brand-primary;
+  }
+  &.bage-success {
+    background-color: $brand-success;
+  }
+  &.bage-info {
+    background-color: $brand-info;
+  }
+  &.bage-warning {
+    background-color: $brand-warning;
+  }
+  &.bage-danger {
+    background-color: $brand-danger;
+  }
+}

@@ -1,0 +1,90 @@
+// ***************************************
+// Dropdown
+// ***************************************
+
+// Basic Class
+// -----------
+
+.dropdown {
+	position: relative;
+	display: inline-block;
+	padding-right: 14px;
+	color: $dropdown-color;
+	z-index: $dropdown-zindex;
+
+	//Dropdown marker
+	&::after {
+		position: absolute;
+		display: inline-block;
+		@include center(y);
+		right: 0;
+		font-family: "Material Icons";
+		content:"\e5c5";
+		margin-top: -2px;
+		color: $dropdown-color;
+		@include transition(.25s);
+	}
+
+	//Submenu item
+	.sub-menu {
+		display: block;
+		position: absolute;
+		top: 100%;
+		list-style: none;
+		padding: $grid-vertical-step $submenu-right-padding  $grid-vertical-step  $grid-vertical-step;
+		border: 1px solid $gray-light;
+		text-align: left;
+		background-color: #fff;
+		z-index: 100;
+		visibility: hidden;
+		opacity: 0;
+		@include transform(translateY(10px));
+		> li {
+			padding: 0;
+			a {
+				color: $gray-darker;
+				padding: 0;
+				position: relative;
+				padding-left: 0;
+				line-height: 1.8;
+				display: block;
+				@include backface-visibility(hidden);
+
+				// Link hover marker
+				&::before {
+					font-family: 'Material Icons';
+					content: "\e15b";
+					position: absolute;
+					top: -1px;
+					left: -14px;
+					margin-right: 3px;
+					visibility: hidden;
+					opacity: 0;
+					@include transition(opacity .35s);
+				}
+			}
+			&:hover {
+				> a {
+					@include transform(translateX(10px));
+					color: $submenu-hover-color;
+					text-decoration: none;
+					&::before {
+						visibility: visible;
+						opacity: 1;
+					}
+				}
+			}
+		}
+	}
+	&:hover {
+		color: $dropdown-hover-color;
+		&::after { color: $dropdown-hover-color; }
+		>a { color: $dropdown-hover-color; }
+		> .sub-menu {
+			opacity: 1;
+			visibility: visible;
+			@include transform (translateY(0));
+			@include transition(opacity .25s, transform .35s);
+		}
+	}
+}

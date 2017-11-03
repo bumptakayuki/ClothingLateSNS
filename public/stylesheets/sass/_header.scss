@@ -1,0 +1,175 @@
+// ***************************************
+// Header Styles
+// ***************************************
+
+// Top Bar
+// -------
+.top-bar {
+	position: relative;
+	z-index: 10;
+	@media #{$nav-collapse} {
+		display: none;
+	}
+}
+
+// Navbar styles
+// -------------
+.navbar {
+	position: relative;
+	z-index: 9;
+	@media #{$tablet-land} {
+		display: none;
+	}
+}
+.navbar-inner {
+	display: table;
+	width: 100%;
+	.column {
+		display: table-cell;
+		vertical-align: middle;
+		&:first-child, &:last-child { width: 40%; }
+		> * { display: inline-block; }
+	}
+}
+
+// logo
+// ----
+.logo {
+	display: inline-block;
+	max-width: $main-logo-width;
+	margin: 18px auto;
+}
+
+
+// Tools
+// -----
+.header-tools {
+	width: 100%;
+	> * {
+		display: inline-block;
+	}
+	.search {
+		max-width: 260px;
+		width: 100%;
+		margin: 0;
+	}
+
+	.cart-container {
+		position: relative;
+		.sub-menu {
+			right: 0;
+			width: $header-cart-dropdown-width;
+		}
+		&::after {
+			display: none;
+		}
+	}
+	.header-tools-link {
+		font-size: 24px;
+		margin-left: 20px;
+		vertical-align: middle;
+		margin-top: 1px;
+		color: $gray-dark;
+		&:hover {
+			color: $dropdown-hover-color;
+		}
+	}
+}
+
+.cart-link {
+	position: relative;
+	.counter {
+		position: absolute;
+		top: -1px;
+		right: -6px;
+		font-size: 10px;
+		background-color: $brand-primary;
+		color: #fff;
+		width: 16px;
+		height: 16px;
+		text-align: center;
+		border-radius: 50%;
+		line-height: 17px;
+		@media #{$nav-collapse} {
+			top: -6px;
+		}
+	}
+}
+
+// Maga Menu
+// ---------
+.mega-menu-container {
+	border-top: 1px solid $gray-light;
+	border-bottom: 1px solid $gray-light;
+	position: relative;
+	z-index: 8;
+	@media #{$tablet-land} {
+		display: none;
+	}
+}
+
+// Offcanvas
+// ---------
+.off-canvas-cont {
+	z-index: 50;
+	background-color: #fff;
+	padding: 20px $grid-vertical-step;
+}
+
+// Header on Collapse View
+.mobile-view {
+	display: none;
+	border-bottom: 1px solid $gray-light;
+	@media #{$nav-collapse} {
+		display: block;
+	}
+	.container {
+		display: flex;
+		justify-content: space-between;
+		flex-direction: row;
+		align-items: center;
+		position: relative;
+		padding-top: 15px;
+		padding-bottom: 15px;
+		&::before, &::after {
+			display: none;
+		}
+	}
+	i {
+		font-size: 24px;
+	}
+	.logo {
+		position: absolute;
+		@include center(xy);
+		margin: 0;
+	}
+	.mobile-tools {
+		> * {
+			display: inline-block;
+			margin-left: 18px;
+		}
+	}
+	.cart-link {
+		@extend .cart-link;
+	}
+}
+
+.off-canvas-cont {
+	.inner-toggle {
+		font-size: 24px !important;
+		float: right;
+		margin-top: -3px;
+	}
+	.side-nav-tools {
+		padding-bottom: 18px;
+		> * {
+			display: inline-block;
+			font-size: 18px;
+			line-height: 1;
+			margin-right: 10px;
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+	}
+}

@@ -1,0 +1,22 @@
+// ***************************************
+// Box With Icon
+// ***************************************
+
+// Base Class
+// ----------
+.box-with-icon {
+  .bwi-icon {
+    font-size: 78px;
+    line-height: 1;
+    padding-bottom: 5px;
+    img {
+      width: auto;
+    }
+    .bwi-title {
+      font-size: 24px;
+    }
+  }
+  @media #{$tablet-port} {
+    margin-bottom: 20px;
+  }
+}

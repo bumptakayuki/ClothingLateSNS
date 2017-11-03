@@ -1,0 +1,46 @@
+// ***************************************
+// Footer
+// ***************************************
+
+
+// Basic Class
+// -----------
+.footer {
+  padding-top: ($grid-vertical-step * 2);
+  border-top: 1px solid $gray-light;
+  // Copyright
+  // ---------
+	.copyright {
+    margin-top: ($grid-vertical-step * 2);
+    background-color: $gray-darker;
+    padding: ($grid-vertical-step / 2);
+		.container {
+      display: table;
+  		.column	{
+  			display: table-cell;
+  			vertical-align: middle;
+  			width: 50%;
+  			&:last-child { text-align: right; }
+  		}
+  		p {
+  			font-weight: 600;
+        font-size: $font-size-small;
+  			margin: 0;
+        padding: 0;
+  			> a {
+  				padding: 0;
+  				border: none;
+          color: $gray-light;
+          &:hover {
+            text-decoration: underline;
+          }
+  			}
+  		}
+  		.cards {
+  			display: inline-block;
+  			width: 187px;
+  			> img { width: 100%; }
+  		}
+    }
+	}
+}

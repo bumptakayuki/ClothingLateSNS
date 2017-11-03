@@ -1,0 +1,81 @@
+// ***************************************
+// Forms
+// ***************************************
+
+
+// Input Base Class
+// ----------------
+.form-control {
+	border: 1px solid $gray-light;
+	width: 100%;
+	padding: 12.5px 12px;
+	margin-bottom: $grid-vertical-step;
+	color: $gray-darker;
+	@include transition(.25s);
+	&:focus {
+		border: 1px solid $gray-darker;
+	}
+
+	&.input-sm {
+		padding: 6.5px 12px;
+	}
+}
+
+// Select Style
+// ------------
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  border-radius: 0;
+  background-color: #fff;
+  @extend .form-control;
+  option:first-child {
+  	color: $gray;
+  }
+}
+select::-ms-expand{
+  display: none;
+}
+.select {
+	position: relative;
+	margin-bottom: $grid-vertical-step;
+	select {
+		display: block;
+		margin-bottom: 0;
+		padding-right: 30px;
+	}
+	&::after {
+		font-family: "Material Icons";
+		content:"\e5c5";
+		position: absolute;
+		@include center(y);
+		right: 9px;
+		font-size: 18px;
+	}
+}
+
+// Label Style
+// -----------
+label {
+	padding-bottom: 6px;
+	display: block;
+	line-height: 1;
+}
+
+// Checkbox
+// --------
+.checkbox, .radio {
+	display: inline-block;
+	margin-right: 10px;
+	input {
+		position: relative;
+		top: 1px;
+	}
+}
+
+
+
+// Placeholder
+// -----------

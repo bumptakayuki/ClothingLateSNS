@@ -1,0 +1,20 @@
+// ***************************************
+// Quick Preview
+// ***************************************
+
+.modal-content {
+  .category {
+    margin-top: 0;
+  }
+  @media #{$tablet-land} {
+    .action-tools, .tags-list-widget, .category, .social {
+      display: none;
+    }
+    .single-item-info {margin-top: 30px;}
+  }
+  .select {
+    &::after {
+      margin-top: -7px;
+    }
+  }
+}

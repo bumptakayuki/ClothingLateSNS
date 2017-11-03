@@ -1,0 +1,158 @@
+// ***************************************
+// Scaffolding
+// ***************************************
+
+// Font Smoothing Rendering
+// ------------------------
+* {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  overflow-x: hidden !important;
+}
+
+// Body base
+// ---------
+body {
+  background: {
+    position: center;
+    color: $body-bg;
+    repeat: no-repeat;
+    size: cover;
+  }
+  color: $text-color;
+  font: {
+    family: $font-family-base;
+    size: $font-size-base;
+  }
+  line-height: $line-height-base;
+  overflow-x: hidden;
+}
+
+// Forms
+// -----
+input, textarea, select, button, a {
+  outline: none;
+  &:focus, &:hover, &:active {
+    outline: none;
+  }
+}
+
+input[type]:not([type='submit']):not([type='hidden']):not([type='checkbox']):not([type='radio']):not([type='file']), textarea {
+  @include appearance(none);
+}
+
+
+// Images
+// ------
+img {
+  width: 100%;
+  &.auto-width {
+    width: auto;
+  }
+}
+
+
+// Links
+// -----
+a {
+  color: $gray-darker;
+  @include transition(.25s);
+  &:hover {
+    color: $brand-primary;
+    text-decoration: none;
+  }
+  &.underline-link {
+    text-decoration: underline;
+  }
+}
+// Display & Positioning
+// ---------------------
+.block { display: block; }
+.inline { display: inline-block; }
+.block-center {
+  display: block;
+  margin: auto;
+}
+.relative { position: relative; }
+.absolute { position: absolute; }
+.margin-all-none { margin: 0 !important; }
+
+// Vertical Space classes
+// ----------------------
+@include block-padding-top(1, 10);
+@include block-padding-bottom(1, 10);
+@include block-margin-top(1, 10);
+@include block-margin-bottom(1, 10);
+@include block-padding-left(1, 10);
+@include block-padding-right(1, 10);
+@include block-margin-left(1, 10);
+@include block-margin-right(1, 10);
+
+@include block-space-none(margin, top);
+@include block-space-none(margin, bottom);
+@include block-space-none(padding, top);
+@include block-space-none(padding, bottom);
+
+@include block-space-none(margin, left);
+@include block-space-none(margin, right);
+@include block-space-none(padding, left);
+@include block-space-none(padding, right);
+
+// Contextual backgrounds
+// ----------------------
+.bg-default, .bg-primary, .bg-success,
+.bg-info, .bg-warning, .bg-danger {
+  color: #fff;
+  a {
+    color: #fff;
+    text-decoration: underline;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+.bg-default { background-color: $brand-default; }
+.bg-primary { background-color: $brand-primary; }
+.bg-success { background-color: $brand-success; }
+.bg-info { background-color: $brand-info; }
+.bg-warning { background-color: $brand-warning; }
+.bg-danger { background-color: $brand-danger; }
+.bg-gray { background-color: $gray-lighter; }
+.bg-white { background-color: #fff; }
+
+// Blockquotes
+// -----------
+blockquote {
+	font-size: $font-size-lead;
+  color: $brand-default;
+  position: relative;
+  margin: 0 0 0 43px;
+  cite {
+    font-size: $font-size-small;
+    margin-top: -15px;
+    display: block;
+    color: $gray;
+  }
+  &::before {
+    position: absolute;
+    display: block;
+    font-family: 'material icons';
+    content: "\e244";
+    font-size: 36px;
+    top: -10px;
+    left: -50px;
+  }
+}
+
+.fw-section {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+  &.no-cover {
+    background-size: auto;
+  }
+}

@@ -1,0 +1,348 @@
+// ***************************************
+// Navigation Styles
+// ***************************************
+
+// Main Nav
+// --------
+.main-nav {
+	padding: 0;
+	margin: 0;
+	a { text-decoration: none !important; }
+	.current > a, .current::after {
+		color: $main-menu-lvl-1-hover-color !important;
+	}
+	.lvl-1 {
+		margin-right: 18px;
+		margin-bottom: 0;
+		display: inline-block;
+		color: $dropdown-color;
+		&::after {
+			color: $main-menu-lvl-1-color;
+		}
+		a { color: $main-menu-lvl-1-color; }
+
+		// Main level hover effect
+		&:hover {
+			&::after { color: $main-menu-lvl-1-hover-color; }
+			> a { color: $main-menu-lvl-1-hover-color; }
+		}
+
+		.sub-menu {
+			margin-left: -$grid-vertical-step;
+			width: $sub-menu-lvl-1-width;
+
+			.dropdown {
+				position: relative;
+				&::after {
+					content: "\e5cc";
+					color: $main-menu-lvl-2-color;
+					@include backface-visibility(hidden);
+				}
+				&:hover {
+					&::after {
+						color: $main-menu-lvl-2-hover-color;
+					}
+				}
+			}
+
+			.lvl-2 {
+				display: block;
+				.sub-menu {
+					top: -25px;
+					left: calc(100% + #{$submenu-right-padding});
+					margin-left: 0;
+				}
+
+				&.dropdown {
+					// Buffer box, to engage hover
+					&::before {
+						position: absolute;
+						content: "";
+						width: 30%;
+						height: 100%;
+						top: 0;
+						right: 0;
+						@include transform(translateX(100%));
+					}
+				}
+
+				&::after {
+					right: -22px;
+				}
+			}
+		}
+	}
+}
+
+// Mega Menu
+// ---------
+.mega-menu-inner {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin-top: -1px;
+	.lvl-1 {
+		text-align: center;
+		width: 100%;
+		&::after {
+			display: none;
+		}
+		> a {
+			display: block;
+			padding: 14px 0 12px;
+			border-top: 1px solid transparent;
+			text-decoration: none !important;
+			color: $link-color;
+			.bage {
+				margin-left: 12px;
+			}
+		}
+		&:hover {
+			> a {
+				border-color: $brand-primary;
+				color: $link-color-hover;
+			}
+		}
+		&.dropdown { padding-right: 0; }
+	}
+
+	.mega-menu-wrap {
+		position: absolute;
+		width: 100%;
+		opacity: 0;
+		visibility: hidden;
+		@include transform(translateY(10px));
+		@include transition(.05s);
+		top: 100%;
+		left: 0;
+		background-color: #fff;
+		margin-top: 1px;
+		border-bottom: 1px solid $gray-light;
+		.mega-menu {
+			display: flex;
+			max-width: 1170px;
+			margin-left: auto;
+			margin-right: auto;
+			padding-left: 15px;
+			padding-right: 15px;
+			ul {
+				@include list-unstyled;
+				margin-top: 4px;
+				> li {
+					padding: 0;
+					a {
+						color: $gray-darker;
+						padding: 0;
+						position: relative;
+						padding-left: 0;
+						line-height: 1.7;
+						display: inline-block;
+						@include backface-visibility(hidden);
+
+						// Link hover marker
+						&::before {
+							font-family: 'Material Icons';
+							content: "\e15b";
+							position: absolute;
+							top: -1px;
+							left: -14px;
+							margin-right: 3px;
+							visibility: hidden;
+							opacity: 0;
+							@include transition(opacity .35s);
+						}
+						&:hover {
+							@include transform(translateX(10px));
+							color: $submenu-hover-color;
+							text-decoration: none;
+							&::before {
+								visibility: visible;
+								opacity: 1;
+							}
+						}
+					}
+				}
+			}
+			[class^= "column"] {
+				text-align: left;
+				border-left: 1px solid $gray-light;
+				padding: $grid-vertical-step 29px 34px;
+				&:first-child {
+					border: none;
+					padding-left: 0;
+				}
+				&:last-child {
+					padding-right: 0;
+				}
+			}
+			.column-75 {
+				flex-basis: 75%;
+			}
+			.column-50 {
+				flex-basis: 50%;
+			}
+			.column-25 {
+				flex-basis: 25%;
+			}
+			@media  #{$desktop} {
+		    max-width: 970px;
+			}
+			@media #{$tablet-land} {
+		    max-width: 750px;
+			}
+			.title {
+				font-size: $font-size-large;
+			}
+			.featured-area {
+				overflow: hidden;
+				> * {
+					width: 50%;
+					float: left;
+					padding: 8px 15px 0;
+					&:first-child {
+						padding-left: 0;
+					}
+					&:last-child {
+						padding-right: 0;
+					}
+				}
+				.fear-image {
+					display: block;
+					margin-bottom: 18px;
+				}
+			}
+		}
+	}
+
+	.lvl-1:hover {
+		.mega-menu-wrap {
+			opacity: 1;
+			visibility: visible;
+			@include transform(translateY(0));
+			@include transition(.25s .1s);
+		}
+	}
+}
+
+
+// Offcanvas
+// Backdrop Styles
+// ---------------
+div[canvas=container][style*="transition"] {
+	.backdrop {
+		position: absolute;
+		content: "";
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		opacity: 0;
+		visibility: hidden;
+		background-color: $gray-darker;
+		@include transition(.25s);
+		z-index: 40;
+	}
+	&[style] {
+		.backdrop {
+			visibility: visible;
+			opacity: .5;
+			@include transition(.35s);
+		}
+	}
+}
+
+// OffCanvas navigation styles & behaviour
+// ---------------------------------------
+.offcanvas-navigation {
+	position: relative;
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: floor($grid-vertical-step / 2);
+  ul {
+  	list-style: none;
+  	padding: 0;
+
+    &.menu {
+      @include transform(translate3d(0,0,0));
+      @include transition(all 0.4s cubic-bezier(0.860, 0.000, 0.070, 1.000));
+      &.off-view {
+        @include transform(translate3d(-100%,0,0));
+      }
+      &.in-view {
+        @include transform(translate3d(0,0,0));
+      }
+    }
+
+  	li {
+  		a {
+  			border: none;
+  			line-height: 2.15;
+				display: block;
+  		}
+  		&.current > a {
+  			color: $link-color-hover;
+  		}
+  		&.menu-item-has-children {
+  			> a:after {
+					display: inline-block;
+					vertical-align: middle;
+					font-family: "material icons";
+					content: "\e315";
+					line-height: 1;
+					margin-top: 3px;
+					float: right;
+					line-height: 1.5;
+  			}
+
+        // Submenu
+        > .sub-menu {
+          position: absolute;
+          width: 100%;
+          height: auto;
+          top: 0;
+          right: -100%;
+          @include transform(translate3d(100%,0,0));
+          @include transition(all 0.4s cubic-bezier(0.860, 0.000, 0.070, 1.000));
+          &.in-view {
+            @include transform(translate3d(0,0,0));
+          }
+          &.off-view {
+            @include transform(translate3d(-100%,0,0));
+          }
+          .current_page_item > a {
+            color: $link-color-hover;
+          }
+        }
+  		}
+      &.back-btn > a {
+				font-size: 16px;
+				color: $gray;
+				&::before {
+	        display: inline-block;
+	        vertical-align: middle;
+					font-family: "material icons";
+					content: "\e315";
+	        font-size: $font-size-xs;
+	        line-height: 1;
+	        margin: -2px 6px 0 0;
+	        @include transform(rotate(180deg));
+	      }
+			}
+			&.divider {
+				height: 1px;
+				background-color: $gray-light;
+				margin: 10px 0;
+			}
+			&.title {
+				font-size: 16px;
+				color: $gray;
+			}
+  	}
+  }
+}
+
+// Current page highlight
+// ----------------------
+.current-menu-item > a {
+  color: $link-color-hover;
+}

@@ -1,0 +1,24 @@
+// ***************************************
+// Page Title
+// ***************************************
+
+
+// Base Class
+// ----------------
+.page-title {
+   padding: $grid-vertical-step 0 ($grid-vertical-step * 2);
+   .container > * { display: inline-block; }
+   .title {
+     color: $gray-darker;
+   }
+}
+
+.bnr-title {
+  background-repeat: no-repeat;
+  .title {
+    font-size: 50px;
+  }
+  .sub-title {
+    font-size: 24px;
+  }
+}
