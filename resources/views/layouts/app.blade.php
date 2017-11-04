@@ -499,6 +499,74 @@
                                 <i class="material-icons favorite"></i>
                             </a>
 
+                            <div class="cart-container dropdown">
+                                <a href="#" class="header-tools-link cart-link">
+                                    <i class="material-icons message"></i>
+                                    <span class="counter">24</span>
+                                </a>
+
+                                <div class="sub-menu">
+                                    <div class="widget cart-widget">
+                                        <div class="widget-title">
+                                            Message List
+                                        </div>
+
+                                        <ul class="cart-list">
+                                            <!-- Cart List Item -->
+                                            <li>
+                                                <a href="message" class="cart-thumb">
+                                                    <img src="img/blog/04.jpg" alt="">
+                                                </a>
+
+                                                <div class="info-cont">
+                                                    <a href="message" class="item-title">
+                                                    エミリー
+                                                    </a>
+
+                                                    <div class="category">
+                                                        初めまして！服のコーディネートで相談があります！
+                                                        私の体型に合った服は無いでしょうか？！
+                                                    </div>
+                                                </div>
+                                            </li><!-- Cart List Item END -->
+
+                                            <!-- Cart List Item -->
+                                            <li>
+                                                <a href="message" class="cart-thumb">
+                                                    <img src="img/shop/cart-widget/02.jpg" alt="">
+                                                </a>
+
+                                                <div class="info-cont">
+                                                    <a href="message" class="item-title">
+                                                        ジェシー
+                                                    </a>
+
+                                                    <div class="category">
+                                                        初めまして！服のコーディネートで相談があります！
+                                                        私の体型に合った服は無いでしょうか？！
+                                                    </div>
+                                                </div>
+                                            </li><!-- Cart List Item END -->
+                                            <li>
+                                                <a href="message" class="cart-thumb">
+                                                    <img src="img/blog/04.jpg" alt="">
+                                                </a>
+
+                                                <div class="info-cont">
+                                                    <a href="message" class="item-title">
+                                                        エミリー
+                                                    </a>
+
+                                                    <div class="category">
+                                                        初めまして！服のコーディネートで相談があります！
+                                                        私の体型に合った服は無いでしょうか？！
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
                             <!-- Cart dropdown element -->
                             <div class="cart-container dropdown">
                                 <a href="#" class="header-tools-link cart-link">
@@ -863,6 +931,12 @@
                     <a href="account-wishlist.html" class="wishlist">
                         <i class="material-icons favorite"></i>
                     </a>
+                    <div class="cart-container">
+                        <a href="shopping-cart.html" class="cart-link">
+                            <i class="material-icons message"></i>
+                            <span class="counter">24</span>
+                        </a>
+                    </div>
 
                     <!-- Cart dropdown element -->
                     <div class="cart-container">
