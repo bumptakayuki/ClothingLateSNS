@@ -932,7 +932,7 @@
                         <i class="material-icons favorite"></i>
                     </a>
                     <div class="cart-container">
-                        <a href="shopping-cart.html" class="cart-link">
+                        <a href="message" class="cart-link">
                             <i class="material-icons message"></i>
                             <span class="counter">24</span>
                         </a>
