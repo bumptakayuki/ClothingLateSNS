@@ -192,7 +192,9 @@
 
                         <ul class="sub-menu">
                             <li>
-                                <a href="gallery-masonry.html">Mypage</a>
+                                <a href="my_page">
+                                    MyPage
+                                </a>
                             </li>
                             <li>
                                 <a href="gallery-4cols.html">
