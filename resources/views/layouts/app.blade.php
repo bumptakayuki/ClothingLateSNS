@@ -500,7 +500,7 @@
                             <!-- Cart dropdown element -->
                             <div class="cart-container dropdown">
                                 <a href="#" class="header-tools-link cart-link">
-                                    <i class="material-icons message"></i>
+                                    <i class="material-icons shopping_cart"></i>
                                     <span class="counter">24</span>
                                 </a>
 
@@ -865,7 +865,7 @@
                     <!-- Cart dropdown element -->
                     <div class="cart-container">
                         <a href="shopping-cart.html" class="cart-link">
-                            <i class="material-icons message"></i>
+                            <i class="material-icons shopping_cart"></i>
                             <span class="counter">24</span>
                         </a>
                     </div>

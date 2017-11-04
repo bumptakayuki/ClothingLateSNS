@@ -1,6 +1,4 @@
 /vendor
-/storage
-!/storage/tmp/*
 .env
 .idea*
 !.gitkeep

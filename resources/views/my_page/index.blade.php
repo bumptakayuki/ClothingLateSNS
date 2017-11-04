@@ -42,15 +42,28 @@
                         </div>
                         <div class="col-sm-5">
                             <div class="single-item-info">
-                                <div class="item-logo">
-                                    <img src="img/single-item-logo.png" alt="">
-                                </div>
                                 <div class="item-title">
-                                    OVERSIZED DRESS
+                                    キャサリン
                                 </div>
                                 <div class="item-sku">
-                                    Product Sku: 5110336
+                                    身長: 170cm
                                 </div>
+                                <div class="item-sku">
+                                    体重: 45kg
+                                </div>
+                                <div class="item-sku">
+                                    スリーサイズ: 80 80 80
+                                </div>
+                                <div class="item-sku">
+                                    足のサイズ: 26cm
+                                </div>
+                                <div class="item-sku">
+                                    顔のタイプ: きれいめ
+                                </div>
+                                <div class="item-sku">
+                                    今すぐスタイリングされたいか？: されたい
+                                </div>
+
                                 <div class="item-rating">
                                     <img src="img/rating.png" alt="">
                                     <span> (12 reviews)</span>
@@ -60,13 +73,7 @@
                                     <span class="bage bage-primary">New</span>
                                 </div>
                                 <div class="item-info">
-                                    Eternity bands are a classy and stylish innovation to storm the market. These are often gifted for a marriage anniversary or at the time of giving birth to a child.
-                                </div>
-                                <div class="cost">
-                                    $250 <span>$280</span>
-                                </div>
-                                <div class="action-tools">
-                                    <a href="#" class="market-btn btn-amazon" style="background-image: url(img/market-btns/amazon.png);"><span>Order now at</span></a>
+                                    何を着て良いかわからないので、アドバイス欲しいです！
                                 </div>
                                 <div class="category">Woman / Bodysuit</div>
 
@@ -117,33 +124,15 @@
                         <div role="tabpanel" class="tab-pane transition fade in active" id="tab1">
                             <h5>Details:</h5>
 
-                            <p>Increasing prosperity in our lives can be accomplished by having the right frame of mind. The truth is, our thoughts are very powerful. They are capable of influencing every aspect of our daily lives, from our physical health to our social behaviors. I’m sure you’ve heard the adage, “As you think, so shall you be.”</p>
-
-                            <p>If we want to improve our lives, we must first improve our thoughts. Harnessing the power of thought in a positive way has the ability to create great change in our lives, including our financial well-being and prosperity. But how? How do we take something as intangible as thoughts, and manifest them into a physical reality?</p>
-
-                            <div class="row">
-                                <div class="col-sm-6">
-                                    <h5>Things to know:</h5>
-
-                                    <ul class="list-featured margin-top-1x">
-                                        <li>Nylon</li>
-                                        <li>Machine wash</li>
-                                    </ul>
-                                    <img src="img/clothes-tile.jpg" style="width: auto; " alt="">
-                                </div>
-
-
-                                <div class="col-sm-6">
-                                    <h5>Things to know:</h5>
-
-                                    <ul class="list-featured margin-top-1x">
-                                        <li>Model wears: Medium</li>
-                                        <li>Model height: 188cm/6'2"- Measurements taken from size Medium</li>
-                                        <li>remove Chest: 22.5"</li>
-                                        <li>remove Length: 29.5"</li>
-                                    </ul>
-                                </div>
-                            </div>
+                            <p>
+                            生年月日：不明（29歳）<br>
+                                <br>
+                            出身地：不明<br>
+                                <br>
+                            職業：Cancam専属スタイリスト<br>
+                                <br>
+                            所属事務所：スターレイプロダクション<br>
+                            <p>
                         </div>
 
                         <div role="tabpanel" class="tab-pane transition fade" id="tab2">
@@ -233,8 +222,136 @@
                 <div class="container">
                     <!-- Block Title -->
                     <h2 class="block-title text-left margin-bottom-2x">
-                        Related Products
-                        <small>b-shop</small>
+                        所持している洋服一覧
+                    </h2><!-- Block Title END -->
+
+                    <div class="row">
+                        <div class="col-md-3">
+                            <!-- Shop Grid Tile -->
+                            <div class="tile">
+                                <div class="preview-box">
+                                    <img src="img/tiles/13.jpg" alt="">
+
+                                    <div class="preview-meta">
+                                        <div>
+                                            <a href="#" class="btn btn-iconed"><i class="material-icons favorite_border"></i></a>
+                                        </div>
+                                        <div>
+                                            <a href="#" data-toggle="modal" data-target="#quickPreview" class="btn btn-iconed"><i class="material-icons zoom_out_map"></i></a>
+                                        </div>
+                                        <div>
+                                            <a href="#" class="btn btn-iconed"><i class="material-icons swap_horiz"></i></a>
+                                        </div>
+                                        <div>
+                                            <a href="#" class="btn btn-iconed"><i class="material-icons shopping_cart"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tile-title">
+                                    <a href="product-gallery-left.html">ORIENTAL PRINT BODYSUIT</a>
+                                </div>
+
+                            </div><!-- Shop Grid Tile END -->
+                        </div>
+
+                        <div class="col-md-3">
+                            <!-- Shop Grid Tile -->
+                            <div class="tile">
+                                <div class="preview-box">
+                                    <img src="img/tiles/12.jpg" alt="">
+
+                                    <div class="preview-meta">
+                                        <div>
+                                            <a href="#" class="btn btn-iconed"><i class="material-icons favorite_border"></i></a>
+                                        </div>
+                                        <div>
+                                            <a href="#" data-toggle="modal" data-target="#quickPreview" class="btn btn-iconed"><i class="material-icons zoom_out_map"></i></a>
+                                        </div>
+                                        <div>
+                                            <a href="#" class="btn btn-iconed"><i class="material-icons swap_horiz"></i></a>
+                                        </div>
+                                        <div>
+                                            <a href="#" class="btn btn-iconed"><i class="material-icons shopping_cart"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tile-title">
+                                    <a href="product-gallery-left.html">ORIENTAL PRINT BODYSUIT</a>
+                                </div>
+
+                            </div><!-- Shop Grid Tile END -->
+                        </div>
+
+                        <div class="col-md-3">
+                            <!-- Shop Grid Tile -->
+                            <div class="tile">
+                                <div class="preview-box">
+                                    <img src="img/tiles/13.jpg" alt="">
+
+                                    <div class="preview-meta">
+                                        <div>
+                                            <a href="#" class="btn btn-iconed"><i class="material-icons favorite_border"></i></a>
+                                        </div>
+                                        <div>
+                                            <a href="#" data-toggle="modal" data-target="#quickPreview" class="btn btn-iconed"><i class="material-icons zoom_out_map"></i></a>
+                                        </div>
+                                        <div>
+                                            <a href="#" class="btn btn-iconed"><i class="material-icons swap_horiz"></i></a>
+                                        </div>
+                                        <div>
+                                            <a href="#" class="btn btn-iconed"><i class="material-icons shopping_cart"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tile-title">
+                                    <a href="product-gallery-left.html">ORIENTAL PRINT BODYSUIT</a>
+                                </div>
+
+                            </div><!-- Shop Grid Tile END -->
+                        </div>
+
+                        <div class="col-md-3">
+                            <!-- Shop Grid Tile -->
+                            <div class="tile">
+                                <div class="preview-box">
+                                    <img src="img/tiles/12.jpg" alt="">
+
+
+                                    <div class="preview-meta">
+                                        <div>
+                                            <a href="#" class="btn btn-iconed"><i class="material-icons favorite_border"></i></a>
+                                        </div>
+                                        <div>
+                                            <a href="#" data-toggle="modal" data-target="#quickPreview" class="btn btn-iconed"><i class="material-icons zoom_out_map"></i></a>
+                                        </div>
+                                        <div>
+                                            <a href="#" class="btn btn-iconed"><i class="material-icons swap_horiz"></i></a>
+                                        </div>
+                                        <div>
+                                            <a href="#" class="btn btn-iconed"><i class="material-icons shopping_cart"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tile-title">
+                                    <a href="product-gallery-left.html">ORIENTAL PRINT BODYSUIT</a>
+                                </div>
+
+                            </div><!-- Shop Grid Tile END -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="fw-section margin-top-3x">
+                <div class="container">
+                    <!-- Block Title -->
+                    <h2 class="block-title text-left margin-bottom-2x">
+                        販売商品
                     </h2><!-- Block Title END -->
 
                     <div class="row">
