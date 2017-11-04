@@ -3,15 +3,15 @@
 
 <head>
     <meta charset="utf-8">
-    <title>B-Shop | Hero Slider</title>
+    <title>Pocket Stylist</title>
 
     <!--SEO Meta Tags-->
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
-    <meta name="author" content="8Guild" />
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+    <meta name="author" content="8Guild"/>
 
     <!--Mobile Specific Meta Tag-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
 
     <!--Favicon-->
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
@@ -65,7 +65,8 @@
     <!-- Modal -->
     <div class="modal fade" id="quickPreview" tabindex="-1" role="dialog">
         <div class="modal-dialog">
-            <button type="button" class="close-btn" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <button type="button" class="close-btn" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+            </button>
             <div class="modal-content">
                 <div class="row">
                     <div class="col-sm-7">
@@ -91,7 +92,8 @@
                                 <span class="bage bage-primary">New</span>
                             </div>
                             <div class="item-info">
-                                Eternity bands are a classy and stylish innovation to storm the market. These are often gifted for a marriage anniversary or at the time of giving birth to a child.
+                                Eternity bands are a classy and stylish innovation to storm the market. These are often
+                                gifted for a marriage anniversary or at the time of giving birth to a child.
                             </div>
                             <div class="radio-group color">
                                 <div class="title">Choose Color</div>
@@ -117,9 +119,11 @@
                                     </select>
                                 </div>
 
-                                <a href="#" class="btn btn-gray right-icon margin-bottom-none">Add To Cart <i class="material-icons shopping_cart"></i></a>
+                                <a href="#" class="btn btn-gray right-icon margin-bottom-none">Add To Cart <i
+                                            class="material-icons shopping_cart"></i></a>
 
-                                <a href="#" class="btn btn-gray btn-iconed margin-bottom-none"><i class="material-icons favorite_border"></i></a>
+                                <a href="#" class="btn btn-gray btn-iconed margin-bottom-none"><i
+                                            class="material-icons favorite_border"></i></a>
                             </div>
                             <div class="category">Woman / Bodysuit</div>
 
@@ -500,7 +504,8 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-4">
-                            <span class="text-primary">Welcome to B-Shop! Here is a free text! <i class="material-icons info_outline"></i></span>
+                            <span class="text-primary">Welcome to B-Shop! Here is a free text! <i
+                                        class="material-icons info_outline"></i></span>
                         </div>
                         <div class="col-sm-4 text-center">
                             <a href="#" class="social socicon-instagram"></a>
@@ -527,32 +532,33 @@
                                     </ul>
                                 </li>
 
-                                <li>
+                                <li class="dropdown">
                                     <a href="#">
                                         <i class="material-icons person"></i>
 
-                                        <span class="hidden-md">
-                                            <a href="{{ route('logout') }}"
-                                                                   onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                                            Logout
-                                        </a></span>
-                                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                            {{ csrf_field() }}
-                                        </form>
-                                    </a>
-                                </li>
+                                        <a href="#">
+                                            <span class="hidden-md">Account</span>
+                                        </a>
 
-                                <li class="dropdown">
-                                    <a href="#">
-                                        <span>$</span>
-                                        <span class="hidden-md">Currency</span>
+                                        <ul class="sub-menu">
+                                            <li>
+                                                <a href="#">
+                                                    <span class="hidden-md">
+                                                        <a href="{{ route('logout') }}"
+                                                           onclick="event.preventDefault();
+                                                             document.getElementById('logout-form').submit();">
+                                                            Logout
+                                                        </a>
+                                                    </span>
+                                                    <form id="logout-form" action="{{ route('logout') }}" method="POST"
+                                                          style="display: none;">
+                                                        {{ csrf_field() }}
+                                                    </form>
+                                                </a>
+                                            </li>
+                                            <li><a href="#">EUR</a></li>
+                                        </ul>
                                     </a>
-
-                                    <ul class="sub-menu">
-                                        <li><a href="#">USD</a></li>
-                                        <li><a href="#">EUR</a></li>
-                                    </ul>
                                 </li>
                             </ul>
                         </div>
@@ -592,146 +598,7 @@
                                     </ul>
                                 </li><!-- Main Navigation Level END -->
                                 <!-- Main Navigation Level -->
-                                <li class="nav-item dropdown lvl-1">
-                                    <a href="#">Shop</a>
-
-                                    <ul class="sub-menu">
-                                        <!-- 2nd Navigation Level -->
-                                        <li class="nav-item dropdown lvl-2">
-                                            <a href="#">Shop Pages</a>
-
-                                            <ul class="sub-menu">
-                                                <li>
-                                                    <a href="shop-grid-3cols-sl.html">Grid 3 Cols Sidebar Left</a>
-                                                </li>
-                                                <li>
-                                                    <a href="shop-grid-2cols-sl.html">Grid 2 Cols Sidebar Left</a>
-                                                </li>
-                                                <li>
-                                                    <a href="shop-grid-3cols-sr.html">Grid 3 Cols Sidebar Right</a>
-                                                </li>
-                                                <li>
-                                                    <a href="shop-grid-2cols-sr.html">Grid 2 Cols Sidebar Right</a>
-                                                </li>
-                                                <li>
-                                                    <a href="shop-grid-4cols-ns.html">Grid 4 Cols No Sidebar</a>
-                                                </li>
-                                                <li>
-                                                    <a href="shop-grid-3cols-ns.html">Grid 3 Cols No Sidebar</a>
-                                                </li>
-                                                <li>
-                                                    <a href="shop-grid-2cols-ns.html">Grid 2 Cols No Sidebar</a>
-                                                </li>
-                                                <li>
-                                                    <a href="shop-list-sl.html">List Sidebar Left</a>
-                                                </li>
-                                                <li>
-                                                    <a href="shop-list-sr.html">List Sidebar Right</a>
-                                                </li>
-                                                <li>
-                                                    <a href="shop-list-ns.html">List No Sidebar</a>
-                                                </li>
-                                            </ul>
-                                        </li><!-- 2nd Navigation Level END -->
-                                        <!-- 2nd Navigation Level -->
-                                        <li class="nav-item dropdown lvl-2">
-                                            <a href="#">Categories</a>
-
-                                            <ul class="sub-menu">
-                                                <li>
-                                                    <a href="shop-cat-4cols.html">Grid 4 Columns</a>
-                                                </li>
-                                                <li>
-                                                    <a href="shop-cat-3cols.html">Grid 3 Columns</a>
-                                                </li>
-                                                <li>
-                                                    <a href="shop-cat-2cols.html">Grid 2 Columns</a>
-                                                </li>
-                                            </ul>
-                                        </li><!-- 2nd Navigation Level END -->
-                                        <li class="nav-item dropdown lvl-2">
-                                            <a href="#">Product Pages</a>
-
-                                            <ul class="sub-menu">
-                                                <li>
-                                                    <a href="product-gallery-left.html">Product Gallery Left</a>
-                                                </li>
-                                                <li>
-                                                    <a href="product-gallery-right.html">Product Gallery Right</a>
-                                                </li>
-                                                <li>
-                                                    <a href="product-grouped.html">Product Grouped</a>
-                                                </li>
-                                                <li>
-                                                    <a href="product-affiliate.html">Product Affiliate</a>
-                                                </li>
-                                                <li>
-                                                    <a href="product-out-stock.html">Product Out of Stock</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <!-- 2nd Navigation Level -->
-                                        <li class="nav-item dropdown lvl-2">
-                                            <a href="#">Orders</a>
-
-                                            <ul class="sub-menu">
-                                                <li>
-                                                    <a href="shopping-cart.html">Shopping Cart</a>
-                                                </li>
-                                                <li>
-                                                    <a href="checkout-simple.html">Checkout Simple</a>
-                                                </li>
-                                                <li>
-                                                    <a href="checkout-wizard.html">Checkout Steps Wizard</a>
-                                                </li>
-                                            </ul>
-
-                                        </li><!-- 2nd Navigation Level END -->
-                                        <!-- 2nd Navigation Level -->
-                                        <li class="nav-item lvl-2">
-                                            <a href="products-compare.html">Products Comparison</a>
-                                        </li><!-- 2nd Navigation Level END -->
-                                        <!-- 2nd Navigation Level -->
-                                        <li class="nav-item dropdown lvl-2">
-                                            <a href="#">Account</a>
-
-                                            <ul class="sub-menu">
-                                                <li>
-                                                    <a href="account-login.html">Log In / Sign Up</a>
-                                                </li>
-                                                <li>
-                                                    <a href="account-wishlist.html">Wishlist</a>
-                                                </li>
-                                                <li>
-                                                    <a href="account-order-track.html">Track your Order</a>
-                                                </li>
-                                                <li>
-                                                    <a href="account-orders-list.html">Orders List</a>
-                                                </li>
-                                                <li>
-                                                    <a href="account-order-info.html">Order Information</a>
-                                                </li>
-                                                <li>
-                                                    <a href="account-user-info.html">User Information</a>
-                                                </li>
-                                            </ul>
-                                        </li><!-- 2nd Navigation Level END -->
-                                    </ul>
-                                </li><!-- Main Navigation Level END -->
-                                <!-- Main Navigation Level -->
-                                <li class="nav-item dropdown lvl-1">
-                                    <a href="#">Blog</a>
-
-                                    <ul class="sub-menu">
-                                        <li class="nav-item lvl-2">
-                                            <a href="blog-grid.html">Grid View</a>
-                                        </li>
-                                        <li class="nav-item lvl-2">
-                                            <a href="blog-single.html">Single Post</a>
-                                        </li>
-                                    </ul>
-                                </li><!-- Main Navigation Level END-->
-                                <li class="nav-item dropdown lvl-1">
+                               <li class="nav-item dropdown lvl-1">
                                     <a href="#">Gallery</a>
 
                                     <ul class="sub-menu">
@@ -749,34 +616,13 @@
                                         </li>
                                     </ul>
                                 </li><!-- Main Navigation Level END-->
-                                <li class="nav-item dropdown lvl-1">
-                                    <a href="#">Pages</a>
-
-                                    <ul class="sub-menu">
-                                        <li class="nav-item lvl-2">
-                                            <a href="page-about.html">About Us</a>
-                                        </li>
-                                        <li class="nav-item lvl-2">
-                                            <a href="page-faq.html">FAQ</a>
-                                        </li>
-                                        <li class="nav-item lvl-2">
-                                            <a href="page-store-locator.html">Store Locator</a>
-                                        </li>
-                                        <li class="nav-item lvl-2">
-                                            <a href="page-404.html">404</a>
-                                        </li>
-                                    </ul>
-                                </li><!-- Main Navigation Level END-->
-                                <li class="nav-item lvl-1">
-                                    <a href="elements.html">Elements</a>
-                                </li><!-- Main Navigation Level END-->
                             </ul><!-- Main Navigation END -->
                         </div>
 
                         <div class="column text-center">
                             <!-- Main Logo -->
                             <a href="index.html" class="logo">
-                                <span style="font-size:20px"><b>ClothingLate</b></span>
+                                <span style="font-size:15px"><b>PocketStylist</b></span>
                             </a><!-- Main Logo END -->
                         </div>
 
@@ -813,7 +659,8 @@
                                                     </a>
 
                                                     <div class="info-cont">
-                                                        <a href="product-gallery-left.html" class="item-title">SUEDE-EFFECT JACKET</a>
+                                                        <a href="product-gallery-left.html" class="item-title">SUEDE-EFFECT
+                                                            JACKET</a>
 
                                                         <div class="category">
                                                             Skirts
@@ -830,7 +677,8 @@
                                                     </a>
 
                                                     <div class="info-cont">
-                                                        <a href="product-gallery-left.html" class="item-title">SUEDE-EFFECT JACKET</a>
+                                                        <a href="product-gallery-left.html" class="item-title">SUEDE-EFFECT
+                                                            JACKET</a>
 
                                                         <div class="category">
                                                             Skirts
@@ -850,8 +698,11 @@
                                                 </li><!-- Cart Total END -->
                                             </ul>
 
-                                            <a href="shopping-cart.html" class="btn btn-default btn-block margin-right-none">Go to cart</a>
-                                            <a href="checkout-wizard.html" class="btn btn-default btn-block margin-right-none">Poceed to checkout</a>
+                                            <a href="shopping-cart.html"
+                                               class="btn btn-default btn-block margin-right-none">Go to cart</a>
+                                            <a href="checkout-wizard.html"
+                                               class="btn btn-default btn-block margin-right-none">Poceed to
+                                                checkout</a>
                                         </div>
                                     </div>
                                 </div><!-- Cart dropdown element END -->
@@ -1167,11 +1018,58 @@
         <main>
             <section class="fw-setion">
                 <div class="rev_slider_wrapper">
-                    <div id="slider1" class="rev_slider"  data-version="5.0">
+                    <div id="slider1" class="rev_slider" data-version="5.0">
                         <ul>
                             <li data-transition="fade">
 
-                                <img src="img/slider/01.jpg"  alt="">
+                                <img src="img/slider/02.jpg" alt="">
+
+
+                                <div class="tp-caption rs-parallaxlevel-2"
+
+
+                                     data-x="right" data-hoffset="['460','230','160','70']"
+                                     data-y="center" data-voffset="['-80','-30','-35','40']"
+                                     data-fontsize="['77','50','45','30']"
+                                     data-transform_idle="o:1;"
+                                     data-transform_in="opacity:0;s:500;e:Power2.easeInOut;"
+                                     data-transform_out="opacity:0;s:300;s:300;e:Power3.easeInOut"
+
+                                     data-responsive_offset="on"
+                                     data-start="500"
+
+                                     style="font-style: italic;">Pocket
+                                </div>
+
+                                <div class="tp-caption rs-parallaxlevel-1"
+                                     data-x="right" data-hoffset="['200','50','20','30']"
+                                     data-y="center" data-voffset="['30','50','25','80']"
+                                     data-fontsize="['173','120','95','60']"
+                                     data-transform_idle="o:1;"
+                                     data-transform_in="opacity:0;s:500;e:Power2.easeInOut;"
+                                     data-transform_out="opacity:0;s:300;s:300;e:Power3.easeInOut"
+
+                                     data-responsive_offset="on"
+                                     data-start="800"
+
+                                     style="color: #efbb1d;">Stylist
+                                </div>
+
+                                <div class="tp-caption"
+                                     data-x="right" data-hoffset="['380','150','100','40']"
+                                     data-y="center" data-voffset="['200','150','125','180']"
+                                     data-transform_idle="o:1;"
+                                     data-transform_in="opacity:0;s:500;e:Power2.easeInOut;"
+                                     data-transform_out="opacity:0;s:300;s:300;e:Power3.easeInOut"
+                                     data-responsive_offset="on"
+                                     data-start="1000">
+
+                                    <a href="http://8guild.com" class="btn btn-arrow">Detail</a>
+                                </div>
+                            </li>
+                            <li data-transition="fade">
+
+                                <img src="img/slider/01.jpg" alt="">
 
                                 <div class="tp-caption rs-parallaxlevel-2"
                                      data-x="center" data-hoffset="['0','50','20','30']"
@@ -1230,50 +1128,7 @@
 
                             <li data-transition="fade">
 
-                                <img src="img/slider/02.jpg"  alt="">
-
-                                <div class="tp-caption rs-parallaxlevel-1"
-                                     data-x="right" data-hoffset="['460','230','160','70']"
-                                     data-y="center" data-voffset="['-80','-30','-35','40']"
-                                     data-fontsize="['77','50','45','30']"
-                                     data-transform_idle="o:1;"
-                                     data-transform_in="opacity:0;s:500;e:Power2.easeInOut;"
-                                     data-transform_out="opacity:0;s:300;s:300;e:Power3.easeInOut"
-                                     data-responsive_offset="on"
-                                     data-start="800"
-
-                                     style="color: #efbb1d;">Clothing
-                                </div>
-
-                                <div class="tp-caption rs-parallaxlevel-2"
-                                     data-x="right" data-hoffset="['200','50','20','30']"
-                                     data-y="center" data-voffset="['30','50','25','80']"
-                                     data-fontsize="['173','120','95','60']"
-                                     data-transform_idle="o:1;"
-                                     data-transform_in="opacity:0;s:500;e:Power2.easeInOut;"
-                                     data-transform_out="opacity:0;s:300;s:300;e:Power3.easeInOut"
-                                     data-responsive_offset="on"
-                                     data-start="500"
-
-                                     style="font-style: italic;">Late
-                                </div>
-
-                                <div class="tp-caption"
-                                     data-x="right" data-hoffset="['380','150','100','40']"
-                                     data-y="center" data-voffset="['200','150','125','180']"
-                                     data-transform_idle="o:1;"
-                                     data-transform_in="opacity:0;s:500;e:Power2.easeInOut;"
-                                     data-transform_out="opacity:0;s:300;s:300;e:Power3.easeInOut"
-                                     data-responsive_offset="on"
-                                     data-start="1000">
-
-                                    <a href="http://8guild.com" class="btn btn-arrow">Shop New Collection Now</a>
-                                </div>
-                            </li>
-
-                            <li data-transition="fade">
-
-                                <img src="img/slider/03.jpg"  alt="">
+                                <img src="img/slider/03.jpg" alt="">
 
                                 <div class="tp-caption tp-resizeme rs-parallaxlevel-1"
                                      data-x="['left','left','center','center']" data-hoffset="['170','130','0','0']"
@@ -1399,16 +1254,21 @@
 
                                         <div class="preview-meta">
                                             <div>
-                                                <a href="#" class="btn btn-iconed"><i class="material-icons favorite_border"></i></a>
+                                                <a href="#" class="btn btn-iconed"><i
+                                                            class="material-icons favorite_border"></i></a>
                                             </div>
                                             <div>
-                                                <a href="#" data-toggle="modal" data-target="#quickPreview" class="btn btn-iconed"><i class="material-icons zoom_out_map"></i></a>
+                                                <a href="#" data-toggle="modal" data-target="#quickPreview"
+                                                   class="btn btn-iconed"><i
+                                                            class="material-icons zoom_out_map"></i></a>
                                             </div>
                                             <div>
-                                                <a href="#" class="btn btn-iconed"><i class="material-icons swap_horiz"></i></a>
+                                                <a href="#" class="btn btn-iconed"><i
+                                                            class="material-icons swap_horiz"></i></a>
                                             </div>
                                             <div>
-                                                <a href="#" class="btn btn-iconed"><i class="material-icons shopping_cart"></i></a>
+                                                <a href="#" class="btn btn-iconed"><i
+                                                            class="material-icons shopping_cart"></i></a>
                                             </div>
                                         </div>
                                     </div>
@@ -1440,16 +1300,21 @@
 
                                         <div class="preview-meta">
                                             <div>
-                                                <a href="#" class="btn btn-iconed"><i class="material-icons favorite_border"></i></a>
+                                                <a href="#" class="btn btn-iconed"><i
+                                                            class="material-icons favorite_border"></i></a>
                                             </div>
                                             <div>
-                                                <a href="#" data-toggle="modal" data-target="#quickPreview" class="btn btn-iconed"><i class="material-icons zoom_out_map"></i></a>
+                                                <a href="#" data-toggle="modal" data-target="#quickPreview"
+                                                   class="btn btn-iconed"><i
+                                                            class="material-icons zoom_out_map"></i></a>
                                             </div>
                                             <div>
-                                                <a href="#" class="btn btn-iconed"><i class="material-icons swap_horiz"></i></a>
+                                                <a href="#" class="btn btn-iconed"><i
+                                                            class="material-icons swap_horiz"></i></a>
                                             </div>
                                             <div>
-                                                <a href="#" class="btn btn-iconed"><i class="material-icons shopping_cart"></i></a>
+                                                <a href="#" class="btn btn-iconed"><i
+                                                            class="material-icons shopping_cart"></i></a>
                                             </div>
                                         </div>
                                     </div>
@@ -1479,16 +1344,21 @@
 
                                         <div class="preview-meta">
                                             <div>
-                                                <a href="#" class="btn btn-iconed"><i class="material-icons favorite_border"></i></a>
+                                                <a href="#" class="btn btn-iconed"><i
+                                                            class="material-icons favorite_border"></i></a>
                                             </div>
                                             <div>
-                                                <a href="#" data-toggle="modal" data-target="#quickPreview" class="btn btn-iconed"><i class="material-icons zoom_out_map"></i></a>
+                                                <a href="#" data-toggle="modal" data-target="#quickPreview"
+                                                   class="btn btn-iconed"><i
+                                                            class="material-icons zoom_out_map"></i></a>
                                             </div>
                                             <div>
-                                                <a href="#" class="btn btn-iconed"><i class="material-icons swap_horiz"></i></a>
+                                                <a href="#" class="btn btn-iconed"><i
+                                                            class="material-icons swap_horiz"></i></a>
                                             </div>
                                             <div>
-                                                <a href="#" class="btn btn-iconed"><i class="material-icons shopping_cart"></i></a>
+                                                <a href="#" class="btn btn-iconed"><i
+                                                            class="material-icons shopping_cart"></i></a>
                                             </div>
                                         </div>
                                     </div>
@@ -1515,16 +1385,21 @@
 
                                         <div class="preview-meta">
                                             <div>
-                                                <a href="#" class="btn btn-iconed"><i class="material-icons favorite_border"></i></a>
+                                                <a href="#" class="btn btn-iconed"><i
+                                                            class="material-icons favorite_border"></i></a>
                                             </div>
                                             <div>
-                                                <a href="#" data-toggle="modal" data-target="#quickPreview" class="btn btn-iconed"><i class="material-icons zoom_out_map"></i></a>
+                                                <a href="#" data-toggle="modal" data-target="#quickPreview"
+                                                   class="btn btn-iconed"><i
+                                                            class="material-icons zoom_out_map"></i></a>
                                             </div>
                                             <div>
-                                                <a href="#" class="btn btn-iconed"><i class="material-icons swap_horiz"></i></a>
+                                                <a href="#" class="btn btn-iconed"><i
+                                                            class="material-icons swap_horiz"></i></a>
                                             </div>
                                             <div>
-                                                <a href="#" class="btn btn-iconed"><i class="material-icons shopping_cart"></i></a>
+                                                <a href="#" class="btn btn-iconed"><i
+                                                            class="material-icons shopping_cart"></i></a>
                                             </div>
                                         </div>
                                     </div>
@@ -1554,10 +1429,12 @@
 
                                 <div class="preview-meta">
                                     <div>
-                                        <a href="#" class="btn btn-iconed"><i class="material-icons favorite_border"></i></a>
+                                        <a href="#" class="btn btn-iconed"><i
+                                                    class="material-icons favorite_border"></i></a>
                                     </div>
                                     <div>
-                                        <a href="#" data-toggle="modal" data-target="#quickPreview" class="btn btn-iconed"><i class="material-icons zoom_out_map"></i></a>
+                                        <a href="#" data-toggle="modal" data-target="#quickPreview"
+                                           class="btn btn-iconed"><i class="material-icons zoom_out_map"></i></a>
                                     </div>
                                     <div>
                                         <a href="#" class="btn btn-iconed"><i class="material-icons swap_horiz"></i></a>
@@ -1583,7 +1460,8 @@
                 </div>
             </section>
 
-            <section class="fw-section no-cover bg-gray padding-top-4x padding-bottom-2x" style="background-image: url(img/homes/02.jpg); background-position: center bottom;">
+            <section class="fw-section no-cover bg-gray padding-top-4x padding-bottom-2x"
+                     style="background-image: url(img/homes/02.jpg); background-position: center bottom;">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-6">
@@ -1593,7 +1471,8 @@
                                         <span>Explore editors looks</span>
                                         <h2>Almost Summer Editorial</h2>
 
-                                        <p>Most people consider hair combing a routine activity. There are people who keep a particular hair style throughout their life.</p>
+                                        <p>Most people consider hair combing a routine activity. There are people who
+                                            keep a particular hair style throughout their life.</p>
 
                                         <a href="#" class="btn btn-arrow">Shop All</a>
                                     </div>
@@ -1610,16 +1489,21 @@
 
                                             <div class="preview-meta">
                                                 <div>
-                                                    <a href="#" class="btn btn-iconed"><i class="material-icons favorite_border"></i></a>
+                                                    <a href="#" class="btn btn-iconed"><i
+                                                                class="material-icons favorite_border"></i></a>
                                                 </div>
                                                 <div>
-                                                    <a href="#" data-toggle="modal" data-target="#quickPreview" class="btn btn-iconed"><i class="material-icons zoom_out_map"></i></a>
+                                                    <a href="#" data-toggle="modal" data-target="#quickPreview"
+                                                       class="btn btn-iconed"><i
+                                                                class="material-icons zoom_out_map"></i></a>
                                                 </div>
                                                 <div>
-                                                    <a href="#" class="btn btn-iconed"><i class="material-icons swap_horiz"></i></a>
+                                                    <a href="#" class="btn btn-iconed"><i
+                                                                class="material-icons swap_horiz"></i></a>
                                                 </div>
                                                 <div>
-                                                    <a href="#" class="btn btn-iconed"><i class="material-icons shopping_cart"></i></a>
+                                                    <a href="#" class="btn btn-iconed"><i
+                                                                class="material-icons shopping_cart"></i></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -1649,16 +1533,21 @@
 
                                             <div class="preview-meta">
                                                 <div>
-                                                    <a href="#" class="btn btn-iconed"><i class="material-icons favorite_border"></i></a>
+                                                    <a href="#" class="btn btn-iconed"><i
+                                                                class="material-icons favorite_border"></i></a>
                                                 </div>
                                                 <div>
-                                                    <a href="#" data-toggle="modal" data-target="#quickPreview" class="btn btn-iconed"><i class="material-icons zoom_out_map"></i></a>
+                                                    <a href="#" data-toggle="modal" data-target="#quickPreview"
+                                                       class="btn btn-iconed"><i
+                                                                class="material-icons zoom_out_map"></i></a>
                                                 </div>
                                                 <div>
-                                                    <a href="#" class="btn btn-iconed"><i class="material-icons swap_horiz"></i></a>
+                                                    <a href="#" class="btn btn-iconed"><i
+                                                                class="material-icons swap_horiz"></i></a>
                                                 </div>
                                                 <div>
-                                                    <a href="#" class="btn btn-iconed"><i class="material-icons shopping_cart"></i></a>
+                                                    <a href="#" class="btn btn-iconed"><i
+                                                                class="material-icons shopping_cart"></i></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -1684,7 +1573,8 @@
                 </div>
             </section>
 
-            <section class="fw-section no-cover padding-top-4x margin-bottom-2x" style="background-image: url(img/homes/01.jpg)">
+            <section class="fw-section no-cover padding-top-4x margin-bottom-2x"
+                     style="background-image: url(img/homes/01.jpg)">
                 <div class="container">
                     <!-- Block Title -->
                     <h2 class="block-title text-left margin-bottom-2x">
@@ -1708,7 +1598,8 @@
                                         </div>
 
                                         <div class="tile-title">
-                                            <a href="blog-single.html">What to Wear to Each of Summer’s Hottest Concerts</a>
+                                            <a href="blog-single.html">What to Wear to Each of Summer’s Hottest
+                                                Concerts</a>
                                         </div>
 
                                         <div class="tile-meta">
@@ -1718,11 +1609,14 @@
                                                 <a href="#" class="name">by Bedismo</a>
                                             </div>
 
-                                            <p class="tile-text">Dressing for work on the best of days is a struggle. You’re never quite sure what is appropriate at your office. Plus, you never seem to have anything.</p>
+                                            <p class="tile-text">Dressing for work on the best of days is a struggle.
+                                                You’re never quite sure what is appropriate at your office. Plus, you
+                                                never seem to have anything.</p>
 
                                             <div class="meta-bottom">
                                                 <a href="#" class="comments-qty">36 Comments </a>
-                                                <span class="likes-qty"><i class="material-icons favorite"></i>345</span>
+                                                <span class="likes-qty"><i
+                                                            class="material-icons favorite"></i>345</span>
                                             </div>
                                         </div>
                                     </div><!-- Blog Tile END -->
@@ -1733,7 +1627,8 @@
                                     <!-- Blog Tile -->
                                     <div class="tile tile-blog">
                                         <div class="tile-title">
-                                            <a href="blog-single.html">One-Shoulder Tops Are the New Off-the-Shoulder Tops: Here’s Why</a>
+                                            <a href="blog-single.html">One-Shoulder Tops Are the New Off-the-Shoulder
+                                                Tops: Here’s Why</a>
                                         </div>
 
                                         <div class="tile-meta">
@@ -1743,11 +1638,14 @@
                                                 <a href="#" class="name">by Bedismo</a>
                                             </div>
 
-                                            <p class="tile-text">We didn’t invent one-shoulder dressing simply because we’re desperate for an alternative to the now supersaturated off-the-shoulder trend.</p>
+                                            <p class="tile-text">We didn’t invent one-shoulder dressing simply because
+                                                we’re desperate for an alternative to the now supersaturated
+                                                off-the-shoulder trend.</p>
 
                                             <div class="meta-bottom">
                                                 <a href="#" class="comments-qty">36 Comments </a>
-                                                <span class="likes-qty"><i class="material-icons favorite"></i>345</span>
+                                                <span class="likes-qty"><i
+                                                            class="material-icons favorite"></i>345</span>
                                             </div>
                                         </div>
                                     </div><!-- Blog Tile END -->
@@ -1772,11 +1670,14 @@
                                                 <a href="#" class="name">by Bedismo</a>
                                             </div>
 
-                                            <p class="tile-text">Dressing for work on the best of days is a struggle. You’re never quite sure what is appropriate at your office. Plus, you never seem to have anything.</p>
+                                            <p class="tile-text">Dressing for work on the best of days is a struggle.
+                                                You’re never quite sure what is appropriate at your office. Plus, you
+                                                never seem to have anything.</p>
 
                                             <div class="meta-bottom">
                                                 <a href="#" class="comments-qty">36 Comments </a>
-                                                <span class="likes-qty"><i class="material-icons favorite"></i>345</span>
+                                                <span class="likes-qty"><i
+                                                            class="material-icons favorite"></i>345</span>
                                             </div>
                                         </div>
                                     </div><!-- Blog Tile END -->
@@ -1787,7 +1688,8 @@
                                     <!-- Blog Tile -->
                                     <div class="tile tile-blog">
                                         <div class="tile-title">
-                                            <a href="blog-single.html">What to Wear to Each of Summer’s Hottest Concerts</a>
+                                            <a href="blog-single.html">What to Wear to Each of Summer’s Hottest
+                                                Concerts</a>
                                         </div>
 
                                         <div class="tile-meta">
@@ -1797,11 +1699,14 @@
                                                 <a href="#" class="name">by Bedismo</a>
                                             </div>
 
-                                            <p class="tile-text">Dressing for work on the best of days is a struggle. You’re never quite sure what is appropriate at your office. Plus, you never seem to have anything.</p>
+                                            <p class="tile-text">Dressing for work on the best of days is a struggle.
+                                                You’re never quite sure what is appropriate at your office. Plus, you
+                                                never seem to have anything.</p>
 
                                             <div class="meta-bottom">
                                                 <a href="#" class="comments-qty">36 Comments </a>
-                                                <span class="likes-qty"><i class="material-icons favorite"></i>345</span>
+                                                <span class="likes-qty"><i
+                                                            class="material-icons favorite"></i>345</span>
                                             </div>
                                         </div>
                                     </div><!-- Blog Tile END -->
@@ -1823,7 +1728,8 @@
                                     <img src="img/bwi-img/03.png" alt="">
                                 </div>
                                 <h3 class="bwi-title">Return &amp; Exchange</h3>
-                                <p class="bwi-text">The Myspace page defines the individual, his or her characteristics, traits, personal choices and the overall personality of the person.</p>
+                                <p class="bwi-text">The Myspace page defines the individual, his or her characteristics,
+                                    traits, personal choices and the overall personality of the person.</p>
                             </div>
                         </div>
                     </div>
@@ -1834,7 +1740,8 @@
                                     <img src="img/bwi-img/02.png" alt="">
                                 </div>
                                 <h3 class="bwi-title">Live Support</h3>
-                                <p class="bwi-text">The Myspace page defines the individual, his or her characteristics, traits, personal choices and the overall personality of the person.</p>
+                                <p class="bwi-text">The Myspace page defines the individual, his or her characteristics,
+                                    traits, personal choices and the overall personality of the person.</p>
                             </div>
                         </div>
                     </div>
@@ -1845,7 +1752,8 @@
                                     <img src="img/bwi-img/01.png" alt="">
                                 </div>
                                 <h3 class="bwi-title">Gift Card Up To 50%</h3>
-                                <p class="bwi-text">The Myspace page defines the individual, his or her characteristics, traits, personal choices and the overall personality of the person.</p>
+                                <p class="bwi-text">The Myspace page defines the individual, his or her characteristics,
+                                    traits, personal choices and the overall personality of the person.</p>
                             </div>
                         </div>
                     </div>
@@ -1854,7 +1762,8 @@
 
             <section class="fw-section bg-default margin-bottom-3x">
                 <!-- Item Carousel -->
-                <div class="items-carousel" data-slick='{"arrows": false, "dots": false, "slidesToShow": 6, "autoplay": true, "autoplaySpeed": 2000}'>
+                <div class="items-carousel"
+                     data-slick='{"arrows": false, "dots": false, "slidesToShow": 6, "autoplay": true, "autoplaySpeed": 2000}'>
                     <img src="img/logos/01.png" alt="">
                     <img src="img/logos/02.png" alt="">
                     <img src="img/logos/03.png" alt="">
@@ -2140,15 +2049,19 @@
                 </div>
             </section>
 
-            <section class="fw-section margin-top-1x padding-top-3x padding-bottom-3x" style="background-image: url(img/homes/03.jpg)">
+            <section class="fw-section margin-top-1x padding-top-3x padding-bottom-3x"
+                     style="background-image: url(img/homes/03.jpg)">
                 <div class="container text-center">
                     <div class="row">
                         <div class="col-md-6 col-md-offset-3">
                             <h4 class="text-default">Newsletter Sign Up</h4>
-                            <p>Just fill in your details below and let us keep you up to date with the latest news, events and stories from Sophie Hulme</p>
+                            <p>Just fill in your details below and let us keep you up to date with the latest news,
+                                events and stories from Sophie Hulme</p>
 
-                            <input type="text" class="form-control text-center margin-bottom-none" placeholder="Enter your name">
-                            <input type="text" class="form-control text-center" style="margin-top: 10px" placeholder="Enter your email">
+                            <input type="text" class="form-control text-center margin-bottom-none"
+                                   placeholder="Enter your name">
+                            <input type="text" class="form-control text-center" style="margin-top: 10px"
+                                   placeholder="Enter your email">
 
                             <a href="#" class="btn btn-arrow margin-right-none">Subscribe</a>
                         </div>
@@ -2194,11 +2107,13 @@
                             <ul>
                                 <li>
                                     <div style="margin-bottom: 7px;">Find Store</div>
-                                    <a href="#" class="btn btn-gray btn-iconed btn-lg"><i class="material-icons place"></i></a>
+                                    <a href="#" class="btn btn-gray btn-iconed btn-lg"><i
+                                                class="material-icons place"></i></a>
                                 </li>
                                 <li>
                                     <div style="margin-bottom: 7px;">Gift Cards</div>
-                                    <a href="#" class="btn btn-gray btn-iconed btn-lg"><i class="material-icons local_activity"></i></a>
+                                    <a href="#" class="btn btn-gray btn-iconed btn-lg"><i
+                                                class="material-icons local_activity"></i></a>
                                 </li>
                             </ul>
                         </div><!-- Latest Product List END -->
@@ -2211,9 +2126,13 @@
                                 Get more with B-Shop
                             </div>
 
-                            <a href="#" class="market-btn btn-appstore" style="background-image: url(img/market-btns/appstore.png);"><span>Download on the</span>App Store</a>
+                            <a href="#" class="market-btn btn-appstore"
+                               style="background-image: url(img/market-btns/appstore.png);"><span>Download on the</span>App
+                                Store</a>
 
-                            <a href="#" class="market-btn btn-playstore" style="background-image: url(img/market-btns/playstore.png);"><span>Download it from</span>Play Store</a>
+                            <a href="#" class="market-btn btn-playstore"
+                               style="background-image: url(img/market-btns/playstore.png);"><span>Download it from</span>Play
+                                Store</a>
                         </div><!-- Categories Filter END -->
                     </div>
 
@@ -2236,7 +2155,8 @@
             <div class="copyright">
                 <div class="container">
                     <div class="column">
-                        <p>&copy; B-Shop 2015 - 2017. Made by <a href="http://8guild.com/" target="_blank">8Guild</a> with <i class="fa fa-heart text-danger"></i> love.</p>
+                        <p>&copy; B-Shop 2015 - 2017. Made by <a href="http://8guild.com/" target="_blank">8Guild</a>
+                            with <i class="fa fa-heart text-danger"></i> love.</p>
                     </div><!-- .column -->
 
                     <div class="column">
