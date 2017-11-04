@@ -779,7 +779,7 @@
                 <div class="container-fluid">
                     <!-- Block Title -->
                     <h2 class="block-title text-center margin-bottom-2x">
-                        Insta
+                        Stylist Insta
                         <small>Follow Us</small>
                     </h2><!-- Block Title END -->
 
