@@ -581,12 +581,11 @@
                                     <!-- Blog Tile -->
                                     <div class="tile tile-blog">
                                         <div class="preview-box">
-                                            <img src="img/blog/01.jpg" alt="">
+                                            <img src="img/blog/zasshi3.jpg" alt="">
                                         </div>
 
                                         <div class="tile-title">
-                                            <a href="blog-single.html">What to Wear to Each of Summer’s Hottest
-                                                Concerts</a>
+                                            <a href="blog-single.html">CamCamで取り上げて頂きました。</a>
                                         </div>
 
                                         <div class="tile-meta">
@@ -596,38 +595,7 @@
                                                 <a href="#" class="name">by Bedismo</a>
                                             </div>
 
-                                            <p class="tile-text">Dressing for work on the best of days is a struggle.
-                                                You’re never quite sure what is appropriate at your office. Plus, you
-                                                never seem to have anything.</p>
-
-                                            <div class="meta-bottom">
-                                                <a href="#" class="comments-qty">36 Comments </a>
-                                                <span class="likes-qty"><i
-                                                            class="material-icons favorite"></i>345</span>
-                                            </div>
-                                        </div>
-                                    </div><!-- Blog Tile END -->
-                                </div><!-- Grid Item END -->
-
-                                <!-- Grid Item -->
-                                <div class="grid-item">
-                                    <!-- Blog Tile -->
-                                    <div class="tile tile-blog">
-                                        <div class="tile-title">
-                                            <a href="blog-single.html">One-Shoulder Tops Are the New Off-the-Shoulder
-                                                Tops: Here’s Why</a>
-                                        </div>
-
-                                        <div class="tile-meta">
-                                            <div class="meta-top">
-                                                <span class="date">July 21, 2016</span>
-                                                <span class="place">New York City</span>
-                                                <a href="#" class="name">by Bedismo</a>
-                                            </div>
-
-                                            <p class="tile-text">We didn’t invent one-shoulder dressing simply because
-                                                we’re desperate for an alternative to the now supersaturated
-                                                off-the-shoulder trend.</p>
+                                            <p class="tile-text">CamCamで取り上げて頂きました。</p>
 
                                             <div class="meta-bottom">
                                                 <a href="#" class="comments-qty">36 Comments </a>
@@ -643,11 +611,11 @@
                                     <!-- Blog Tile -->
                                     <div class="tile tile-blog">
                                         <div class="preview-box">
-                                            <img src="img/blog/03.jpg" alt="">
+                                            <img src="img/blog/zasshi2.jpg" alt="">
                                         </div>
 
                                         <div class="tile-title">
-                                            <a href="blog-single.html">What Curling Irons Are The Best Ones</a>
+                                            <a href="blog-single.html">CamCamで取り上げて頂きました。</a>
                                         </div>
 
                                         <div class="tile-meta">
@@ -657,9 +625,7 @@
                                                 <a href="#" class="name">by Bedismo</a>
                                             </div>
 
-                                            <p class="tile-text">Dressing for work on the best of days is a struggle.
-                                                You’re never quite sure what is appropriate at your office. Plus, you
-                                                never seem to have anything.</p>
+                                            <p class="tile-text">CamCamで取り上げて頂きました。</p>
 
                                             <div class="meta-bottom">
                                                 <a href="#" class="comments-qty">36 Comments </a>
@@ -674,9 +640,12 @@
                                 <div class="grid-item">
                                     <!-- Blog Tile -->
                                     <div class="tile tile-blog">
+                                        <div class="preview-box">
+                                            <img src="img/blog/zasshi5.jpg" alt="">
+                                        </div>
+
                                         <div class="tile-title">
-                                            <a href="blog-single.html">What to Wear to Each of Summer’s Hottest
-                                                Concerts</a>
+                                            <a href="blog-single.html">CamCamで取り上げて頂きました。</a>
                                         </div>
 
                                         <div class="tile-meta">
@@ -686,9 +655,7 @@
                                                 <a href="#" class="name">by Bedismo</a>
                                             </div>
 
-                                            <p class="tile-text">Dressing for work on the best of days is a struggle.
-                                                You’re never quite sure what is appropriate at your office. Plus, you
-                                                never seem to have anything.</p>
+                                            <p class="tile-text">CamCamで取り上げて頂きました。</p>
 
                                             <div class="meta-bottom">
                                                 <a href="#" class="comments-qty">36 Comments </a>
@@ -715,8 +682,9 @@
                                     <img src="img/bwi-img/03.png" alt="">
                                 </div>
                                 <h3 class="bwi-title">Return &amp; Exchange</h3>
-                                <p class="bwi-text">The Myspace page defines the individual, his or her characteristics,
-                                    traits, personal choices and the overall personality of the person.</p>
+                                <p class="bwi-text">
+                                    ユーザも自分の着ている商品を売ることができます
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -727,8 +695,7 @@
                                     <img src="img/bwi-img/02.png" alt="">
                                 </div>
                                 <h3 class="bwi-title">Live Support</h3>
-                                <p class="bwi-text">The Myspace page defines the individual, his or her characteristics,
-                                    traits, personal choices and the overall personality of the person.</p>
+                                <p class="bwi-text">不明点があれば気軽にご連絡ください</p>
                             </div>
                         </div>
                     </div>
@@ -738,9 +705,8 @@
                                 <div class="bwi-icon">
                                     <img src="img/bwi-img/01.png" alt="">
                                 </div>
-                                <h3 class="bwi-title">Gift Card Up To 50%</h3>
-                                <p class="bwi-text">The Myspace page defines the individual, his or her characteristics,
-                                    traits, personal choices and the overall personality of the person.</p>
+                                <h3 class="bwi-title">Gift Card</h3>
+                                <p class="bwi-text">ギフトカードがついてきます</p>
                             </div>
                         </div>
                     </div>
@@ -812,7 +778,7 @@
                 <div class="container-fluid">
                     <!-- Block Title -->
                     <h2 class="block-title text-center margin-bottom-2x">
-                        Evaluation
+                        Insta
                         <small>Follow Us</small>
                     </h2><!-- Block Title END -->
 
@@ -820,7 +786,7 @@
                         <div class="col-sm-2">
                             <!-- Insta Tile -->
                             <div class="tile tile-insta">
-                                <a href="#" class="preview-box">
+                                <a href="https://www.instagram.com/stylistmagazine/" class="preview-box">
                                     <img src="img/insta/01.jpg" alt="">
 
                                     <span class="insta-meta" style="margin-left: -25px;">
@@ -838,7 +804,7 @@
                         <div class="col-sm-2">
                             <!-- Insta Tile -->
                             <div class="tile tile-insta">
-                                <a href="#" class="preview-box">
+                                <a href="https://www.instagram.com/stylistmagazine/" class="preview-box">
                                     <img src="img/insta/02.jpg" alt="">
 
                                     <span class="insta-meta" style="margin-left: -25px;">
@@ -856,7 +822,7 @@
                         <div class="col-sm-2">
                             <!-- Insta Tile -->
                             <div class="tile tile-insta">
-                                <a href="#" class="preview-box">
+                                <a href="https://www.instagram.com/stylistmagazine/" class="preview-box">
                                     <img src="img/insta/04.jpg" alt="">
 
                                     <span class="insta-meta" style="margin-left: -25px;">
@@ -874,7 +840,7 @@
                         <div class="col-sm-2">
                             <!-- Insta Tile -->
                             <div class="tile tile-insta">
-                                <a href="#" class="preview-box">
+                                <a href="https://www.instagram.com/stylistmagazine/" class="preview-box">
                                     <img src="img/insta/03.jpg" alt="">
 
                                     <span class="insta-meta" style="margin-left: -25px;">
@@ -892,7 +858,7 @@
                         <div class="col-sm-2">
                             <!-- Insta Tile -->
                             <div class="tile tile-insta">
-                                <a href="#" class="preview-box">
+                                <a href="https://www.instagram.com/stylistmagazine/" class="preview-box">
                                     <img src="img/insta/05.jpg" alt="">
 
                                     <span class="insta-meta" style="margin-left: -25px;">
@@ -910,7 +876,7 @@
                         <div class="col-sm-2">
                             <!-- Insta Tile -->
                             <div class="tile tile-insta">
-                                <a href="#" class="preview-box">
+                                <a href="https://www.instagram.com/stylistmagazine/" class="preview-box">
                                     <img src="img/insta/06.jpg" alt="">
 
                                     <span class="insta-meta" style="margin-left: -25px;">
@@ -928,7 +894,7 @@
                         <div class="col-sm-2">
                             <!-- Insta Tile -->
                             <div class="tile tile-insta">
-                                <a href="#" class="preview-box">
+                                <a href="https://www.instagram.com/stylistmagazine/" class="preview-box">
                                     <img src="img/insta/07.jpg" alt="">
 
                                     <span class="insta-meta" style="margin-left: -25px;">
@@ -946,7 +912,7 @@
                         <div class="col-sm-2">
                             <!-- Insta Tile -->
                             <div class="tile tile-insta">
-                                <a href="#" class="preview-box">
+                                <a href="https://www.instagram.com/stylistmagazine/" class="preview-box">
                                     <img src="img/insta/08.jpg" alt="">
 
                                     <span class="insta-meta" style="margin-left: -25px;">
@@ -964,7 +930,7 @@
                         <div class="col-sm-2">
                             <!-- Insta Tile -->
                             <div class="tile tile-insta">
-                                <a href="#" class="preview-box">
+                                <a href="https://www.instagram.com/stylistmagazine/" class="preview-box">
                                     <img src="img/insta/09.jpg" alt="">
 
                                     <span class="insta-meta" style="margin-left: -25px;">
@@ -982,7 +948,7 @@
                         <div class="col-sm-2">
                             <!-- Insta Tile -->
                             <div class="tile tile-insta">
-                                <a href="#" class="preview-box">
+                                <a href="https://www.instagram.com/stylistmagazine/" class="preview-box">
                                     <img src="img/insta/10.jpg" alt="">
 
                                     <span class="insta-meta" style="margin-left: -25px;">
@@ -1000,7 +966,7 @@
                         <div class="col-sm-2">
                             <!-- Insta Tile -->
                             <div class="tile tile-insta">
-                                <a href="#" class="preview-box">
+                                <a href="https://www.instagram.com/stylistmagazine/" class="preview-box">
                                     <img src="img/insta/11.jpg" alt="">
 
                                     <span class="insta-meta" style="margin-left: -25px;">
@@ -1018,7 +984,7 @@
                         <div class="col-sm-2">
                             <!-- Insta Tile -->
                             <div class="tile tile-insta">
-                                <a href="#" class="preview-box">
+                                <a href="https://www.instagram.com/stylistmagazine/" class="preview-box">
                                     <img src="img/insta/12.jpg" alt="">
 
                                     <span class="insta-meta" style="margin-left: -25px;">

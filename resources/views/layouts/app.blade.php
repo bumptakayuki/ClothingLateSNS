@@ -170,22 +170,7 @@
             <div class="menu-site-menu-container">
                 <ul class="menu">
                     <li class="menu-item menu-item-has-children current">
-                        <a href="#">Home</a>
-
-                        <ul class="sub-menu">
-                            <li class="menu-item current">
-                                <a href="index.html">Hero Slider</a>
-                            </li>
-                            <li class="menu-item">
-                                <a href="home-category-tiles.html">Category</a>
-                            </li>
-                            <li class="menu-item">
-                                <a href="home-featured-products.html">Feature</a>
-                            </li>
-                            <li class="menu-item">
-                                <a href="home-week-deals.html">Deals of the Week</a>
-                            </li>
-                        </ul>
+                        <a href="home">Home</a>
                     </li>
                     <li class="menu-item-has-children">
                         <a href="#">Account</a>
@@ -360,7 +345,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-4">
-                            <span class="text-primary">Welcome to B-Shop! Here is a free text! <i
+                            <span class="text-primary">Pocket Stylist <i
                                         class="material-icons info_outline"></i></span>
                     </div>
                     <div class="col-sm-4 text-center">
@@ -436,27 +421,8 @@
                         <!-- Main Navigation -->
                         <ul class="main-nav">
                             <!-- Main Navigation Level -->
-                            <li class="nav-item dropdown lvl-1 current">
-                                <a href="#">Home</a>
-
-                                <ul class="sub-menu">
-                                    <!-- 2nd Navigation Level -->
-                                    <li class="nav-item lvl-2 current">
-                                        <a href="index.html">Hero Slider</a>
-                                    </li><!-- 2nd Navigation Level END -->
-                                    <!-- 2nd Navigation Level -->
-                                    <li class="nav-item lvl-2">
-                                        <a href="home-category-tiles.html">Category Tiles</a>
-                                    </li><!-- 2nd Navigation Level END -->
-                                    <!-- 2nd Navigation Level -->
-                                    <li class="nav-item lvl-2">
-                                        <a href="home-featured-products.html">Featured Products</a>
-                                    </li><!-- 2nd Navigation Level END -->
-                                    <!-- 2nd Navigation Level -->
-                                    <li class="nav-item lvl-2">
-                                        <a href="home-week-deals.html">Deals of the Week</a>
-                                    </li><!-- 2nd Navigation Level END -->
-                                </ul>
+                            <li class="nav-item lvl-1 current">
+                                <a href="home">Home</a>
                             </li><!-- Main Navigation Level END -->
                             <!-- Main Navigation Level -->
                             <li class="nav-item dropdown lvl-1">
@@ -482,7 +448,7 @@
 
                     <div class="column text-center">
                         <!-- Main Logo -->
-                        <a href="index.html" class="logo">
+                        <a href="home" class="logo">
                             <span style="font-size:15px"><b>PocketStylist</b></span>
                         </a><!-- Main Logo END -->
                     </div>
@@ -495,7 +461,7 @@
                                 <input type="text" class="form-control input-sm" placeholder="Search Shop">
                             </div>
 
-                            <a href="account-wishlist.html" class="header-tools-link wishlist">
+                            <a href="home" class="header-tools-link wishlist">
                                 <i class="material-icons favorite"></i>
                             </a>
 
@@ -627,11 +593,8 @@
                                             </li><!-- Cart Total END -->
                                         </ul>
 
-                                        <a href="shopping-cart.html"
+                                        <a href="shopping"
                                            class="btn btn-default btn-block margin-right-none">Go to cart</a>
-                                        <a href="checkout-wizard.html"
-                                           class="btn btn-default btn-block margin-right-none">Poceed to
-                                            checkout</a>
                                     </div>
                                 </div>
                             </div><!-- Cart dropdown element END -->
@@ -922,13 +885,13 @@
                 </a>
 
                 <!-- Mobile View Logo -->
-                <a href="index.html" class="logo">
+                <a href="home" class="logo">
                     <span style="font-size:15px"><b>PocketStylist</b></span>
                 </a>
 
                 <div class="mobile-tools">
                     <!-- Wishlist Link -->
-                    <a href="account-wishlist.html" class="wishlist">
+                    <a href="home" class="wishlist">
                         <i class="material-icons favorite"></i>
                     </a>
                     <div class="cart-container">
