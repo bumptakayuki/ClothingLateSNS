@@ -14,7 +14,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
 
     <!--Favicon-->
-    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="icon.png" type="image/x-icon">
     <link rel="icon" href="favicon.png" type="image/x-icon">
 
     <!-- Material & Socicon Icons Fonts -->
@@ -112,7 +112,7 @@
                                     </select>
                                 </div>
 
-                                <a href="#" class="btn btn-gray right-icon margin-bottom-none">Add To Cart <i
+                                <a href="shopping" class="btn btn-gray right-icon margin-bottom-none">Add To Cart <i
                                             class="material-icons shopping_cart"></i></a>
 
                                 <a href="#" class="btn btn-gray btn-iconed margin-bottom-none"><i
@@ -202,15 +202,6 @@
                         <ul class="sub-menu">
                             <li>
                                 <a href="gallery-masonry.html">Masonry Grid</a>
-                            </li>
-                            <li>
-                                <a href="gallery-4cols.html">Grid 4 Columns</a>
-                            </li>
-                            <li>
-                                <a href="gallery-3cols.html">Grid 3 Columns</a>
-                            </li>
-                            <li>
-                                <a href="gallery-2cols.html">Grid 2 Columns</a>
                             </li>
                         </ul>
                     </li>
@@ -432,15 +423,6 @@
                                     <li class="nav-item lvl-2">
                                         <a href="gallery-masonry.html">Masonry Grid</a>
                                     </li>
-                                    <li class="nav-item lvl-2">
-                                        <a href="gallery-4cols.html">Grid 4 Columns</a>
-                                    </li>
-                                    <li class="nav-item lvl-2">
-                                        <a href="gallery-3cols.html">Grid 3 Columns</a>
-                                    </li>
-                                    <li class="nav-item lvl-2">
-                                        <a href="gallery-2cols.html">Grid 2 Columns</a>
-                                    </li>
                                 </ul>
                             </li><!-- Main Navigation Level END-->
                         </ul><!-- Main Navigation END -->
@@ -461,14 +443,14 @@
                                 <input type="text" class="form-control input-sm" placeholder="Search Shop">
                             </div>
 
-                            <a href="home" class="header-tools-link wishlist">
+                            <a href="gallery" class="header-tools-link wishlist">
                                 <i class="material-icons favorite"></i>
                             </a>
 
                             <div class="cart-container dropdown">
-                                <a href="#" class="header-tools-link cart-link">
+                                <a href="shopping" class="header-tools-link cart-link">
                                     <i class="material-icons message"></i>
-                                    <span class="counter">24</span>
+                                    <span class="counter">13</span>
                                 </a>
 
                                 <div class="sub-menu">
@@ -535,7 +517,7 @@
                             </div>
                             <!-- Cart dropdown element -->
                             <div class="cart-container dropdown">
-                                <a href="#" class="header-tools-link cart-link">
+                                <a href="shopping" class="header-tools-link cart-link">
                                     <i class="material-icons shopping_cart"></i>
                                     <span class="counter">24</span>
                                 </a>
@@ -549,12 +531,12 @@
                                         <ul class="cart-list">
                                             <!-- Cart List Item -->
                                             <li>
-                                                <a href="product-gallery-left.html" class="cart-thumb">
+                                                <a href="shopping" class="cart-thumb">
                                                     <img src="img/shop/cart-widget/01.jpg" alt="">
                                                 </a>
 
                                                 <div class="info-cont">
-                                                    <a href="product-gallery-left.html" class="item-title">SUEDE-EFFECT
+                                                    <a href="shopping" class="item-title">SUEDE-EFFECT
                                                         JACKET</a>
 
                                                     <div class="category">
@@ -567,12 +549,12 @@
 
                                             <!-- Cart List Item -->
                                             <li>
-                                                <a href="product-gallery-left.html" class="cart-thumb">
+                                                <a href="shopping" class="cart-thumb">
                                                     <img src="img/shop/cart-widget/02.jpg" alt="">
                                                 </a>
 
                                                 <div class="info-cont">
-                                                    <a href="product-gallery-left.html" class="item-title">SUEDE-EFFECT
+                                                    <a href="shopping" class="item-title">SUEDE-EFFECT
                                                         JACKET</a>
 
                                                     <div class="category">
@@ -891,19 +873,19 @@
 
                 <div class="mobile-tools">
                     <!-- Wishlist Link -->
-                    <a href="home" class="wishlist">
+                    <a href="gallery" class="wishlist">
                         <i class="material-icons favorite"></i>
                     </a>
                     <div class="cart-container">
                         <a href="message" class="cart-link">
                             <i class="material-icons message"></i>
-                            <span class="counter">24</span>
+                            <span class="counter">13</span>
                         </a>
                     </div>
 
                     <!-- Cart dropdown element -->
                     <div class="cart-container">
-                        <a href="shopping-cart.html" class="cart-link">
+                        <a href="shopping" class="cart-link">
                             <i class="material-icons shopping_cart"></i>
                             <span class="counter">24</span>
                         </a>

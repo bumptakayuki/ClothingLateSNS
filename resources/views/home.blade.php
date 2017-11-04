@@ -51,7 +51,7 @@
                                      data-responsive_offset="on"
                                      data-start="1000">
 
-                                    <a href="http://8guild.com" class="btn btn-arrow">Detail</a>
+                                    <a href="home" class="btn btn-arrow">Detail</a>
                                 </div>
                             </li>
                             <li data-transition="fade">
@@ -223,9 +223,11 @@
             <section class="container margin-top-3x margin-bottom-3x">
                 <!-- Block Title -->
                 <h2 class="block-title text-left margin-bottom-2x">
-                    New Arrivals
-                    <small>aw 2016</small>
+                    New Styling List
                 </h2><!-- Block Title END -->
+                <p>
+                    スタイリストの方が手がけたスタイリングの一覧です。
+                </p>
 
                 <div class="row">
                     <div class="col-md-6">
@@ -566,7 +568,6 @@
                     <!-- Block Title -->
                     <h2 class="block-title text-left margin-bottom-2x">
                         Latest News
-                        <small>Read our blog</small>
                     </h2><!-- Block Title END -->
 
                     <div>
