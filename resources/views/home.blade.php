@@ -586,7 +586,7 @@
                                         </div>
 
                                         <div class="tile-title">
-                                            <a href="blog-single.html">CamCamで取り上げて頂きました。</a>
+                                            <a href="blog-single.html">Withで取り上げて頂きました。</a>
                                         </div>
 
                                         <div class="tile-meta">
@@ -596,7 +596,7 @@
                                                 <a href="#" class="name">by Bedismo</a>
                                             </div>
 
-                                            <p class="tile-text">CamCamで取り上げて頂きました。</p>
+                                            <p class="tile-text">Withで取り上げて頂きました。</p>
 
                                             <div class="meta-bottom">
                                                 <a href="#" class="comments-qty">36 Comments </a>
@@ -616,7 +616,7 @@
                                         </div>
 
                                         <div class="tile-title">
-                                            <a href="blog-single.html">CamCamで取り上げて頂きました。</a>
+                                            <a href="blog-single.html">BAILAで取り上げて頂きました。</a>
                                         </div>
 
                                         <div class="tile-meta">
@@ -626,7 +626,7 @@
                                                 <a href="#" class="name">by Bedismo</a>
                                             </div>
 
-                                            <p class="tile-text">CamCamで取り上げて頂きました。</p>
+                                            <p class="tile-text">BAILAで取り上げて頂きました。</p>
 
                                             <div class="meta-bottom">
                                                 <a href="#" class="comments-qty">36 Comments </a>
@@ -646,7 +646,7 @@
                                         </div>
 
                                         <div class="tile-title">
-                                            <a href="blog-single.html">CamCamで取り上げて頂きました。</a>
+                                            <a href="blog-single.html">marisolで取り上げて頂きました。</a>
                                         </div>
 
                                         <div class="tile-meta">
@@ -656,7 +656,7 @@
                                                 <a href="#" class="name">by Bedismo</a>
                                             </div>
 
-                                            <p class="tile-text">CamCamで取り上げて頂きました。</p>
+                                            <p class="tile-text">marisolで取り上げて頂きました。</p>
 
                                             <div class="meta-bottom">
                                                 <a href="#" class="comments-qty">36 Comments </a>
@@ -782,6 +782,10 @@
                         Stylist Insta
                         <small>Follow Us</small>
                     </h2><!-- Block Title END -->
+
+                    <p>
+                        スタイリストの方のインスタグラム一覧です。興味がある方はフォローお願いします！
+                    </p>
 
                     <div class="row">
                         <div class="col-sm-2">
@@ -1009,8 +1013,7 @@
                     <div class="row">
                         <div class="col-md-6 col-md-offset-3">
                             <h4 class="text-default">Newsletter Sign Up</h4>
-                            <p>Just fill in your details below and let us keep you up to date with the latest news,
-                                events and stories from Sophie Hulme</p>
+                            <p>メールマガジン登録をご希望の方はよろしくお願いします。</p>
 
                             <input type="text" class="form-control text-center margin-bottom-none"
                                    placeholder="Enter your name">

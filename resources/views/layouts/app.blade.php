@@ -448,7 +448,7 @@
                             </a>
 
                             <div class="cart-container dropdown">
-                                <a href="shopping" class="header-tools-link cart-link">
+                                <a href="message" class="header-tools-link cart-link">
                                     <i class="material-icons message"></i>
                                     <span class="counter">13</span>
                                 </a>
