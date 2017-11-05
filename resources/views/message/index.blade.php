@@ -928,30 +928,61 @@
                                 <ul>
                                     <li class="sent">
                                         <img src="img/shop/cart-widget/02.jpg" alt="" />
-                                        <p>初めまして！服のコーディネートで相談があります！ 私の体型に合った服は無いでしょうか？！</p>
+                                        <p>yukiさん、初めまして。
+                                            すごく憧れるコーディネートをされていたので、私のスタイリングもお願いできませんか</p>
                                     </li>
                                     <li class="replies">
                                         <img src="http://emilcarlsson.se/assets/harveyspecter.png" alt="" />
-                                        <p>ありますよ！任せてください！</p>
+                                        <p>もちろんです！
+                                            体型データを拝見いたしました。一般より華奢な体型でいらっしゃいますので、なかなかサイズ感が難しいことかと存じます。</p>
                                     </li>
                                     <li class="replies">
                                         <img src="http://emilcarlsson.se/assets/harveyspecter.png" alt="" />
-                                        <p>あなたは太めなので、こんな服はどうでしょうか？</p>
-                                    </li>
-                                    <li class="replies">
-                                        <img src="http://emilcarlsson.se/assets/harveyspecter.png" alt="" />
-                                        <p>あとこれも！</p>
+                                        <p>どういった場面でのスタイル提案をご希望でしょうか？</p>
                                     </li>
                                     <li class="sent">
                                         <img src="img/shop/cart-widget/02.jpg" alt="" />
-                                        <p>おお！良いですね！他にも何かありますか？</p>
+                                        <p>今度の日曜日にデートに行くので、どうすれば可愛らしくなれるか教えてほしいです！><</p>
                                     </li>
                                     <li class="replies">
                                         <img src="http://emilcarlsson.se/assets/harveyspecter.png" alt="" />
                                         <p>
-                                           そうですね〜〜。では、これはどうでしょうか！？
+                                            それはとても楽しみですね！
+                                            ぜひともステキな思い出になるようにお手伝いさせていただきたいと思います。
                                         </p>
                                     </li>
+                                    <li class="replies">
+                                        <img src="http://emilcarlsson.se/assets/harveyspecter.png" alt="" />
+                                        <p>
+                                            それでは早速、ゆみえさんのクローゼットを拝見いたしましたので提案させていただきます！
+                                        </p>
+                                    </li>
+                                    <li class="replies">
+                                        <img src="http://emilcarlsson.se/assets/harveyspecter.png" alt="" />
+                                        <p>
+                                            これはどうでしょうか？？
+                                        </p>
+                                    </li>
+
+                                    <li class="replies">
+                                        <img src="http://emilcarlsson.se/assets/harveyspecter.png" alt="" />
+                                        <p>
+                                            <img src="img/message.jpg" alt="" width="100" />
+                                        </p>
+                                    </li>
+                                    <li class="replies">
+                                        <img src="http://emilcarlsson.se/assets/harveyspecter.png" alt="" />
+                                        <p>
+                                            <img src="img/message2.jpg" alt="" width="100" />
+                                        </p>
+                                    </li>
+                                    <li class="replies">
+                                        <img src="http://emilcarlsson.se/assets/harveyspecter.png" alt="" />
+                                        <p>
+                                            それでは早速、ゆみえさんのクローゼットを拝見いたしましたので提案させていただきます！
+                                        </p>
+                                    </li>
+
                                 </ul>
                             </div>
                             <div class="message-input">
